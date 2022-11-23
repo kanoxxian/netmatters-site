@@ -1,0 +1,11 @@
+// UTILITIES
+
+@if variable-exists($font-url--google) {
+    @import url($font-url--google);
+}
+
+// CALC
+
+@function em($target, $context: $base__font-size) {
+    @return ($target, / $context) * 1em;
+}

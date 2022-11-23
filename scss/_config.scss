@@ -1,0 +1,44 @@
+// GLOBAL CONFIG
+
+// FONTS
+
+$font-url--google          : 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@100;300;500';
+
+$font-family--primary      : 'Poppins', sans-serif;
+$font-family--secondary    : 'Roboto', sans-serif;
+
+// FONT WEIGHT
+
+$font-weight--thin         : 300;
+$font-weight--light        : 400;
+$font-weight--medium       : 500;
+$font-weight--bold         : 700;
+
+$font-weightrob-thin       : 100;
+$font-weightrob-medium     : 300;
+$font-weightrob-bold       : 500;
+
+// BASE COLOURS
+
+$white     : #fff;
+$black     : #070707;
+$grey      : #676b6e;
+
+$cloud-burst : #21324F;
+$emerald     : #52D172;
+$blue-ribbon : #0D36F2;
+$thunderbird : #BB1C16;
+$tuscany     : #C04C2A;
+$lavender    : #BC83D2;
+$disco       : #9c0d71;
+
+// COLOUR USAGE
+
+$color-primary   : $cloud-burst;
+$color-shadow    : rgba($black, .2);
+
+
+// TEXT
+
+$base__font-size : 16px;
+$base__line      : 24px;
