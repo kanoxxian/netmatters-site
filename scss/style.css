@@ -1,1 +1,41 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+Header {
+  font-weight: 400;
+  font-size: 2.625em;
+  line-height: 1.0952380952;
+  margin-bottom: 1.6666666667em;
+}
+
+footer {
+  background-color: #21324F;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.about {
+  background-color: red;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.services {
+  background-color: blue;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.contact {
+  background-color: green;
+  flex-grow: 1;
+  flex-basis: 100%;
+}/*# sourceMappingURL=style.css.map */

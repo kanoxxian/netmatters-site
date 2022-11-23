@@ -1,0 +1,30 @@
+footer {
+    background-color: $color-primary;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.about {
+    background-color: red;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.services {
+    background-color: blue;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.contact {
+    background-color: green;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h3

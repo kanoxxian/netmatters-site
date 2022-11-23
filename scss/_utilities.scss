@@ -7,5 +7,5 @@
 // CALC
 
 @function em($target, $context: $base__font-size) {
-    @return ($target, / $context) * 1em;
+    @return calc($target/$context)*1em;
 }
