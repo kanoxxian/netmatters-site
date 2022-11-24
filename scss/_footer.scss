@@ -3,14 +3,21 @@ footer {
     color: $white;
     display: flex;
     flex-direction: column;
+    font-size: 12px;
 }
 
 .footer-container {
     display: flex;
+    gap: 20px;
+    padding: 50px 20px;
+    max-height: 350px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .about {
     background-color: $color-primary;
+    text-align: left;
     flex-grow: 1;
     flex-basis: 100%;
 }
@@ -31,6 +38,7 @@ footer {
 
 .services {
     background-color: $color-primary;
+    text-align: left;
     flex-grow: 1;
     flex-basis: 100%;
 }
@@ -49,13 +57,27 @@ footer {
     text-decoration: underline;
 }
 
+.contact-container {
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch;
+    gap: 40px;
+    width: auto;
+}
+
 .contact {
     background-color: $color-primary;
+    flex-direction: column;
     flex-grow: 1;
-    flex-basis: 100%;
+}
+
+.contact ul {
+    list-style-type: none;
+    line-height: 1.6;
 }
 
 .footer-container h3 {
+    font-weight: $font-weight--thin;
     margin-bottom: 20px;
     font-size: 20px;
 }

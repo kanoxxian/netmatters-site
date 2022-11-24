@@ -2,6 +2,10 @@ body {
     font-size: $base__font-size;
     line-height: calc($base--line / $base--font-size);
     font-family: $font-family--primary;
+    margin: 0; 
+    padding: 0;
+    letter-spacing: .4px;
+    min-height: 100vh;
 }
 
 Header {
@@ -9,4 +13,8 @@ Header {
     font-size: em(42px);
     line-height: calc(46px / 42px);
     margin-bottom: em(70px, 42px);
+}
+
+h3 {
+    padding-bottom: 1em;
 }
