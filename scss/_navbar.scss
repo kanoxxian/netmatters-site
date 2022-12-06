@@ -32,7 +32,7 @@ nav a {
 .sub-menu {
     position: absolute;
     background: #526781;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     display: none;
     left: 0;
@@ -42,7 +42,7 @@ nav a {
     z-index: 1;
 }
 
-nav li:hover .sub-menu {
+nav a:hover .sub-menu {
     display: block;
 }
 
