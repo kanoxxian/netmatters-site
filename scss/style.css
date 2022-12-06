@@ -33,6 +33,7 @@ body {
   letter-spacing: 0.4px;
   min-height: 100vh;
   min-width: 100vw;
+  overflow-x: hidden;
 }
 
 Header {
@@ -131,7 +132,7 @@ nav a:hover .sub-menu {
   height: 100%;
   background-size: cover;
   background-position: 70%;
-  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("../img/banner.jpg");
+  background: linear-gradient(270deg, transparent 25%, #000), url("../img/banner.jpg");
 }
 
 .banner-text {
@@ -787,7 +788,7 @@ a {
   align-items: center;
   flex-direction: column;
   margin: 0px;
-  padding: 0px 40px 40px 40px;
+  padding: 0px 0px 40px 0px;
 }
 
 .blog-heading h3 {
@@ -994,85 +995,6 @@ a {
   border-color: #333645 transparent transparent transparent;
 }
 
-footer {
-  color: #fff;
-  background-color: #333645;
-  width: 100%;
-}
-
-/* adjust width with breakpoints
-	flat pixel amount until smallest breakpoint, then % based */
-#footer-div {
-  width: 1230px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* 'flex-direction: column' on mobile */
-#top {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-/* will have to change width. justify-content, and possibly other shit with breakpoints */
-#top-left {
-  width: 35%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-/* will have to change width. justify-content, and possibly other shit with breakpoints */
-#top-right {
-  width: 65%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#top-left .top-group {
-  margin-right: 0em;
-}
-
-#top-right-shit .top-group {
-  margin-left: 4em;
-}
-
-#bottom {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-#bottom h4:nth-child(1) {
-  width: 70%;
-  text-align: left;
-}
-
-#bottomh4:nth-child(2) {
-  width: 30%;
-  text-align: right;
-}
-
-/* could replace this with a better option idk */
-#footer-line {
-  width: 100%;
-  background-color: white;
-  height: 1px;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  font-size: 12px;
-}
-
-/* NEWSLETTER */
 .newsletter {
   font-size: 32px;
   margin-left: 20px;
@@ -1189,4 +1111,36 @@ label {
 
 .form-button__text {
   height: 100%;
+}
+
+footer {
+  color: #fff;
+  background-color: #333645;
+  width: 100vw;
+  display: block;
+}
+
+.footer-container-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 23px;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 225px;
+  align-content: center;
+}
+
+.services {
+  text-align: left;
+  align-content: center;
+}
+
+.services ul {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */

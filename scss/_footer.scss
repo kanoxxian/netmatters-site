@@ -1,199 +1,31 @@
 footer {
 	color: $white;
 	background-color: $color-primary;
-	width: 100%;
+	width: 100vw;
+	display: block;
 }
 
-/* adjust width with breakpoints
-	flat pixel amount until smallest breakpoint, then % based */
-#footer-div {
-	width: 1230px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* 'flex-direction: column' on mobile */
-#top {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-/* will have to change width. justify-content, and possibly other shit with breakpoints */
-#top-left {
-	width: 35%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-/* will have to change width. justify-content, and possibly other shit with breakpoints */
-#top-right {
-	width: 65%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-#top-left .top-group {
-	margin-right: 0em;
-}
-
-#top-right-shit .top-group {
-	margin-left: 4em;
-}
-
-#bottom {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-
-#bottom h4:nth-child(1) {
-	width: 70%;
-	text-align: left;
-}
-
-#bottomh4:nth-child(2) {
-	width: 30%;
-	text-align: right;
-}
-
-/* could replace this with a better option idk */
-#footer-line {
-	width: 100%;
-	background-color: white;
-	height: 1px;
-}
-
-ul {
-	list-style-type: none;
-	padding-left: 0;
-	font-size: 12px;
-}
-
-
-/* NEWSLETTER */
-
-.newsletter {
-	font-size: 32px;
-	margin-left: 20px;
-	margin-bottom: -5px;
-}
-
-.form {
-	display: flex;
-	flex-direction: column;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-	background: $grey;
-	padding: 5px;
-	width: 100%;
-	font-weight: $font-weightrob-bold;
-	color: $cloud-burst;
-}
-
-.form-item {
+.footer-container-row {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	margin-left: 20px;
-}
-
-.form-input 
-.form-button {
-	text-transform: uppercase;
-	letter-spacing: 0.4px;
-	border: 1px;
-}
-
-.form-input {
-	padding: 1em;
-	width: 35%;
-}
-
-.form-input:focus {
-	border-width: 2px;
-	border-color: rgb(120, 183, 255);
-}
-
-.form-item:first-of-type {
-	position: relative;
-}
-
-.form-item:first-of-type::after {
-	content: '';
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	height: 1px;
-	background: rgba(0, 0, 0, .1);
-}
-
-label {
-	display: inline-block;
-	margin-top: 10px;
-	margin-bottom: -20px;
-}
-
-.checkbox {
-	display: inline-flex;
-	align-items: center;
-	cursor: pointer;
-}
-
-.checkbox__input {
-	display: none;
-}
-
-.checkbox__box {
-	width: 24px;
-	height: 24px;
-	border: 2px solid $cloud-burst;
-	border-radius: 4px;
-	display: flex;
-	align-items: center;
 	justify-content: center;
-	margin-right: 10px;
-	margin-left: 20px;
-	flex-shrink: 0;
+	line-height: 23px;
 }
 
-.checkbox__box::after {
-	content: "\2713";
-	color: $grey;
+.service-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 30px;
+	width: 225px;
+	align-content: center;
 }
 
-.checkbox__input:checked + .checkbox__box {
-	background: $cloud-burst;
-	border-color: $cloud-burst;
+.services {
+	text-align: left;
+	align-content: center;
 }
 
-.form-button {
-	display: inline-flex;
-	justify-content: space-around;
-	height: 40px;
-	width: 110px;
-	margin: 20px 0px 50px 20px;
-	padding-top: 12px;
-	background: $cloud-burst;
-	border: none;
-	outline: none;
-	border-radius: 3px;
-	font-size: 16px;
-	color: $white;
-	text-transform: uppercase;
-	font-weight: $font-weight--medium;
-	cursor: pointer;
-	&:hover {
-		background: darken($cloud-burst, 10%);
-	}
-}
-
-.form-button__text {
-	height: 100%;
+.services ul {
+	list-style: none;
 }
