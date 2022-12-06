@@ -10,9 +10,36 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
 	line-height: 23px;
+	width: 100%;
 }
 
 .service-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	align-content: center;
+}
+
+.services {
+	font-size: 13px;
+	text-align: left;
+	align-content: left;
+
+}
+
+.services h4 {
+	font-size: 16px;
+	font-weight: $font-weight--light;
+	margin-bottom: 26px;
+}
+
+.services ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.office-box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -21,11 +48,19 @@ footer {
 	align-content: center;
 }
 
-.services {
+.offices {
+	font-size: 13px;
 	text-align: left;
-	align-content: center;
+	align-content: left;
 }
 
-.services ul {
+.offices h4 {
+	font-size: 16px;
+	font-weight: $font-weight--light;
+	margin-bottom: 26px;
+}
+
+.offices ul {
 	list-style: none;
+	padding-left: 0;
 }
