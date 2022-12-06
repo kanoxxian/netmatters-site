@@ -43,3 +43,11 @@ $color-shadow    : rgba($black, .2);
 
 $base__font-size : 16px;
 $base__line      : 24px;
+
+// Breakpoints
+
+$brkpoint-sm:  1px;
+$brkpoint-md:  576px;
+$brkpoint-lg:  768px;
+$brkpoint-xlg: 992px;
+$brkpoint-xxlg: 1200px;
