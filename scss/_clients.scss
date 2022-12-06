@@ -1,0 +1,67 @@
+// CLIENTS
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px 0px 50px 0px;
+}
+
+.clients__bussey, 
+.clients__crane,
+.clients__beat,
+.clients__northern {
+    filter: grayscale(100%);
+    position: relative;
+	&:hover {
+		filter: grayscale(0%)
+	}
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+ 
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: $cloud-burst;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    width: 300px;
+    bottom: 120%;
+    left: 0%;
+    margin-left: -60px;
+   
+
+    position: absolute;
+    z-index: 1;
+  }
+  
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .tooltip {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    margin-left: 0px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: $cloud-burst transparent transparent transparent;
+  }
+  
+  

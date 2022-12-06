@@ -1,0 +1,503 @@
+// SERVICES BLOG CARDS
+
+
+section {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid $grey;
+    background-color: $white;
+    color: $cloud-burst;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.service-icon-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: $dark-blue;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card-1:hover {
+    background-color: $dark-blue;
+    color: $white;
+}
+
+.service-card-1:hover > .service-icon-1 {
+    background-color: $white;
+    color: $dark-blue;
+}
+
+.service-card-1:hover > a {
+    background: $white;
+    color: $dark-blue;
+}
+
+.service-card-1:hover > .card-title {
+    color: $white;
+}
+
+.service-card-1:hover > .card-desc {
+    color: $white;
+}
+
+.card-title {
+    color: $cloud-burst;
+    font-size: 18px;
+    font-weight: $font-weight--medium;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-desc {
+    text-align: center;
+    font-size: 13px;
+    font-weight: $font-weight--thin;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: $cloud-burst;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card-1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $dark-blue;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+// 2nd card
+
+.service-card-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid $grey;
+    background-color: $white;
+    color: $blue-ribbon;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: $blue-ribbon;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card-2:hover {
+    background-color: $blue-ribbon;
+    color: $white;
+}
+
+.service-card-2:hover > .service-icon-2 {
+    background-color: $white;
+    color: $blue-ribbon;
+}
+
+.service-card-2:hover > a {
+    background: $white;
+    color: $blue-ribbon;
+}
+
+.service-card-2:hover > .card-title {
+    color: $white;
+}
+
+.service-card-2:hover > .card-desc {
+    color: $white;
+}
+
+.service-card-2 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $blue-ribbon;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+// 3rd card
+
+.service-card-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid $grey;
+    background-color: $white;
+    color: $blue-ribbon;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-icon-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: $emerald;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card-3:hover {
+    background-color: $emerald;
+    color: $white;
+}
+
+.service-card-3:hover > .service-icon-3 {
+    background-color: $white;
+    color: $emerald;
+}
+
+.service-card-3:hover > a {
+    background: $white;
+    color: $emerald;
+}
+
+.service-card-3:hover > .card-title {
+    color: $white;
+}
+
+.service-card-3:hover > .card-desc {
+    color: $white;
+}
+
+.service-card-3 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $emerald;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+// 4th card
+
+.service-card-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid $grey;
+    background-color: $white;
+    color: $thunderbird;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-icon-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: $thunderbird;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card-4:hover {
+    background-color: $thunderbird;
+    color: $white;
+}
+
+.service-card-4:hover > .service-icon-4 {
+    background-color: $white;
+    color: $thunderbird;
+}
+
+.service-card-4:hover > a {
+    background: $white;
+    color: $thunderbird;
+}
+
+.service-card-4:hover > .card-title {
+    color: $white;
+}
+
+.service-card-4:hover > .card-desc {
+    color: $white;
+}
+
+.service-card-4 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $thunderbird;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+// 5th card
+
+.service-card-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid $grey;
+    background-color: $white;
+    color: $tuscany;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-icon-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: $tuscany;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card-5:hover {
+    background-color: $tuscany;
+    color: $white;
+}
+
+.service-card-5:hover > .service-icon-5 {
+    background-color: $white;
+    color: $tuscany;
+}
+
+.service-card-5:hover > a {
+    background: $white;
+    color: $tuscany;
+}
+
+.service-card-5:hover > .card-title {
+    color: $white;
+}
+
+.service-card-5:hover > .card-desc {
+    color: $white;
+}
+
+.service-card-5 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $tuscany;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+// 6th card 
+
+.service-card-6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid $grey;
+    background-color: $white;
+    color: $lavender;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-icon-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: $lavender;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card-6:hover {
+    background-color: $lavender;
+    color: $white;
+}
+
+.service-card-6:hover > .service-icon-6 {
+    background-color: $white;
+    color: $lavender;
+}
+
+.service-card-6:hover > a {
+    background: $white;
+    color: $lavender;
+}
+
+.service-card-6:hover > .card-title {
+    color: $white;
+}
+
+.service-card-6:hover > .card-desc {
+    color: $white;
+}
+
+.service-card-6 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $lavender;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+// 7th card
+
+.service-card-7 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid $grey;
+    background-color: $white;
+    color: $disco;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-icon-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    background-color: $disco;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card-7:hover {
+    background-color: $disco;
+    color: $white;
+}
+
+.service-card-7:hover > .service-icon-7 {
+    background-color: $white;
+    color: $disco;
+}
+
+.service-card-7:hover > a {
+    background: $white;
+    color: $disco;
+}
+
+.service-card-7:hover > .card-title {
+    color: $white;
+}
+
+.service-card-7:hover > .card-desc {
+    color: $white;
+}
+
+.service-card-7 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $disco;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}

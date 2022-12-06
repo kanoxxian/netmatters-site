@@ -1,0 +1,16 @@
+// AWARDS
+
+.awards {
+    display: inline-block;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.awards img {
+    padding-left: 25px;
+    padding-right: 25px;
+    filter: saturate(0);
+    &:hover {
+        filter: saturate(100%)
+    }
+}

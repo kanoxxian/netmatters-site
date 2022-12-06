@@ -1,88 +1,199 @@
 footer {
-    background-color: $color-primary;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
+	color: $white;
+	background-color: $color-primary;
+	width: 100%;
 }
 
-.footer-container {
-    display: flex;
-    gap: 20px;
-    padding: 50px 20px;
-    max-height: 350px;
-    max-width: 1000px;
-    margin: 0 auto;
+/* adjust width with breakpoints
+	flat pixel amount until smallest breakpoint, then % based */
+#footer-div {
+	width: 1230px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.about {
-    background-color: $color-primary;
-    text-align: left;
-    flex-grow: 1;
-    flex-basis: 100%;
+/* 'flex-direction: column' on mobile */
+#top {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.about ul {
-    list-style-type: none;
-    line-height: 1.6;
+/* will have to change width. justify-content, and possibly other shit with breakpoints */
+#top-left {
+	width: 35%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-.about a {
-    color: $white;
-    text-decoration: none;
+/* will have to change width. justify-content, and possibly other shit with breakpoints */
+#top-right {
+	width: 65%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.about a:hover {
-    text-decoration: underline;
+#top-left .top-group {
+	margin-right: 0em;
 }
 
-.services {
-    background-color: $color-primary;
-    text-align: left;
-    flex-grow: 1;
-    flex-basis: 100%;
+#top-right-shit .top-group {
+	margin-left: 4em;
 }
 
-.services ul {
-    list-style-type: none;
-    line-height: 1.6;
+#bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
-.services a {
-    color: $white;
-    text-decoration: none;
+#bottom h4:nth-child(1) {
+	width: 70%;
+	text-align: left;
 }
 
-.services a:hover {
-    text-decoration: underline;
+#bottomh4:nth-child(2) {
+	width: 30%;
+	text-align: right;
 }
 
-.contact-container {
-    display: flex;
-    flex-grow: 1;
-    align-items: stretch;
-    gap: 40px;
-    width: auto;
+/* could replace this with a better option idk */
+#footer-line {
+	width: 100%;
+	background-color: white;
+	height: 1px;
 }
 
-.contact {
-    background-color: $color-primary;
-    flex-direction: column;
-    flex-grow: 1;
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 12px;
 }
 
-.contact ul {
-    list-style-type: none;
-    line-height: 1.6;
+
+/* NEWSLETTER */
+
+.newsletter {
+	font-size: 32px;
+	margin-left: 20px;
+	margin-bottom: -5px;
 }
 
-.footer-container h3 {
-    font-weight: $font-weight--thin;
-    margin-bottom: 20px;
-    font-size: 20px;
+.form {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+	background: $grey;
+	padding: 5px;
+	width: 100%;
+	font-weight: $font-weightrob-bold;
+	color: $cloud-burst;
 }
 
-.copyright {
-    padding: 15px 0;
-    text-align: left;
+.form-item {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.form-input 
+.form-button {
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	border: 1px;
+}
+
+.form-input {
+	padding: 1em;
+	width: 35%;
+}
+
+.form-input:focus {
+	border-width: 2px;
+	border-color: rgb(120, 183, 255);
+}
+
+.form-item:first-of-type {
+	position: relative;
+}
+
+.form-item:first-of-type::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	background: rgba(0, 0, 0, .1);
+}
+
+label {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: -20px;
+}
+
+.checkbox {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.checkbox__input {
+	display: none;
+}
+
+.checkbox__box {
+	width: 24px;
+	height: 24px;
+	border: 2px solid $cloud-burst;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	margin-left: 20px;
+	flex-shrink: 0;
+}
+
+.checkbox__box::after {
+	content: "\2713";
+	color: $grey;
+}
+
+.checkbox__input:checked + .checkbox__box {
+	background: $cloud-burst;
+	border-color: $cloud-burst;
+}
+
+.form-button {
+	display: inline-flex;
+	justify-content: space-around;
+	height: 40px;
+	width: 110px;
+	margin: 20px 0px 50px 20px;
+	padding-top: 12px;
+	background: $cloud-burst;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	font-size: 16px;
+	color: $white;
+	text-transform: uppercase;
+	font-weight: $font-weight--medium;
+	cursor: pointer;
+	&:hover {
+		background: darken($cloud-burst, 10%);
+	}
+}
+
+.form-button__text {
+	height: 100%;
 }

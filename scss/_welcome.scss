@@ -1,0 +1,112 @@
+// WELCOME
+
+.welcome-netmatters {
+    background-color: $cloud-burst;
+    padding: 20px 50px 50px 50px
+}
+
+.welcome-content-left {
+    display: flex;
+    flex-wrap: wrap;
+    color: $white;
+    text-align: left;
+}
+
+.welcome-content-left a {
+    color: $white;
+    text-decoration: none;
+}
+
+.welcome-content-left h2 {
+    font-size: 36px;
+}
+
+.welcome-read-button {
+    background:#272936;
+    line-height: 35px;
+    width: 170px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken(#272936, 10%)
+    }
+}
+
+.h2-clients {
+    color: $white;
+    font-size: 36px;
+}
+
+.welcome-content-right {
+    display: flex;
+    flex-wrap: wrap;
+    color: $white;
+    text-align: left;
+}
+
+.welcome-content-right a {
+    color: $white;
+    text-decoration: none;
+}
+
+.welcome-content-right p {
+    font-weight: $font-weight--bold;
+    font-style: italic;
+}
+
+.welcome-content-right span {
+    font-weight: $font-weight--bold;
+    color: #a3a8ac;
+}
+
+.welcome-content-right h2 {
+    font-size: 36px;
+    height: auto;
+    width: auto;
+}
+
+.welcome-left-bold {
+    font-weight: $font-weight--bold;
+}
+
+.welcome-google-button {
+    display: inline-block;
+    background:#4387f6;
+    line-height: 35px;
+    width: 220px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 40px 8px 0px 0px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken(#4387f6, 10%)
+    }
+}
+
+.welcome-trust-button {
+    display: inline-block;
+    background: #00b67b;
+    line-height: 35px;
+    width: 270px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 40px 0px 0px 8px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken(#00b67b, 10%)
+    }
+}
+
+.gold-star {
+    color: #ffa500;
+    font-size: 50px;
+}
