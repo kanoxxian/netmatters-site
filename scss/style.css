@@ -1119,18 +1119,17 @@ footer {
 
 .footer-container-row {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: space-around;
   line-height: 23px;
   width: 100%;
 }
 
-.service-box {
+.service {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  align-content: center;
+  flex-direction: column;
 }
 
 .services {
@@ -1150,19 +1149,14 @@ footer {
   padding-left: 0;
 }
 
-.office-box {
+.offices {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 30px;
-  width: 225px;
   align-content: center;
-}
-
-.offices {
   font-size: 13px;
   text-align: left;
-  align-content: left;
 }
 
 .offices h4 {
@@ -1174,4 +1168,27 @@ footer {
 .offices ul {
   list-style: none;
   padding-left: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .footer-container-row {
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+  }
+  .service {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .offices {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70vw;
+    align-content: flex-start;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=style.css.map */
