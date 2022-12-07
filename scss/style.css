@@ -4,21 +4,21 @@
 }
 @media screen and (min-width: 768px) {
   .width {
-    max-width: 520px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 992px) {
   .width {
-    max-width: 730px;
+    max-width: 970px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .width {
-    max-width: 940px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1141,6 +1141,7 @@ footer {
 .services h4 {
   font-size: 16px;
   font-weight: 400;
+  text-transform: uppercase;
   margin-bottom: 26px;
 }
 
@@ -1161,6 +1162,7 @@ footer {
 
 .offices h4 {
   font-size: 16px;
+  text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 26px;
 }
@@ -1174,14 +1176,14 @@ footer {
   .footer-container-row {
     flex-direction: column;
     align-content: center;
-    width: 100vw;
   }
   .service {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 70vw;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
   }
   .offices {
     display: flex;
@@ -1190,5 +1192,27 @@ footer {
     width: 70vw;
     align-content: flex-start;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+  }
+  .service {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+  .offices {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100vw;
   }
 }/*# sourceMappingURL=style.css.map */

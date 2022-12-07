@@ -5,15 +5,15 @@
 .width {
     margin: 0 25px;
     @include mq(large) {
-        max-width: 520px;
+        max-width: 750px;
         @include auto-mg-hor;
     }
     @include mq(x-large) {
-        max-width: 730px;
+        max-width: 970px;
         @include auto-mg-hor;
     }
     @include mq(xx-large) {
-        max-width: 940px;
+        max-width: 1200px;
         @include auto-mg-hor;
     }
 }
