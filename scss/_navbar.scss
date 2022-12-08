@@ -48,9 +48,38 @@
 }
 
 .inner-bespoke-menu {
-    display: flex;
-    flex-direction: column;
-    columns: 3;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    justify-items: start;
+}
+
+.inner-bespoke-menu ul {
+    list-style: none;
+    color: $white;
+    font-size: em(19px);
+    font-weight: $font-weight--thin;
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.inner-bespoke-menu h2 {
+    color: $white;
+    font-size: 32px;
+    font-weight: $font-weight--medium;
+    margin-bottom: 0px;
+    grid-column: 1 / 4;
+}
+
+.inner-bespoke-menu ul li {
+    padding: 10px 15px 15px 0px;
+}
+
+.inner-bespoke-menu ul li a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 // .nav-container {
