@@ -193,19 +193,23 @@ nav a:hover .sub-menu {
   margin: 31px 0px 18px 0px;
 }
 
+.service-head {
+  display: flex;
+  width: 100%;
+}
+
 section {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .service-cards {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .service-card-1 {
@@ -697,8 +701,10 @@ section {
 }
 
 .welcome-netmatters {
+  display: flex;
   background-color: #333645;
-  padding: 20px 50px 50px 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .welcome-content-left {
@@ -706,6 +712,8 @@ section {
   flex-wrap: wrap;
   color: #fff;
   text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .welcome-content-left a {
@@ -720,7 +728,7 @@ section {
 .welcome-read-button {
   background: #272936;
   line-height: 35px;
-  width: 170px;
+  width: 190px;
   padding: 10px 20px;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -743,6 +751,8 @@ section {
   flex-wrap: wrap;
   color: #fff;
   text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .welcome-content-right a {
@@ -774,7 +784,7 @@ section {
   display: inline-block;
   background: #4387f6;
   line-height: 35px;
-  width: 220px;
+  width: 241px;
   padding: 10px 20px;
   border-radius: 5px;
   margin: 40px 8px 0px 0px;
@@ -929,7 +939,7 @@ a {
 .readmore-btn {
   background: #5583ac;
   line-height: 35px;
-  width: 110px;
+  width: 120px;
   padding: 5px 10px;
   border-radius: 3px;
   text-align: center;
@@ -1021,6 +1031,11 @@ a {
   border-color: #333645 transparent transparent transparent;
 }
 
+.welcome-netmatters-container {
+  width: 100%;
+  background-color: #333645;
+}
+
 .newsletter-background {
   background-color: #ddd;
 }
@@ -1060,8 +1075,12 @@ a {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
+.checkbox-container {
+  display: flex;
+}
+
 .checkbox__box {
-  display: inline-block;
+  display: flex;
   vertical-align: middle;
   width: 32px;
   height: 32px;
@@ -1069,11 +1088,6 @@ a {
   border-radius: 4px;
   margin-right: 20px;
   margin-left: 15px;
-}
-
-.checkbox-text {
-  float: right;
-  overflow: hidden;
 }
 
 .checkbox__input {
@@ -1254,5 +1268,21 @@ footer {
   }
   .newsletter-h2 {
     margin-left: 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .clients {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .welcome-netmatters {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .welcome-trust-button {
+    margin-left: 0px;
   }
 }/*# sourceMappingURL=style.css.map */

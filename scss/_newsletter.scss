@@ -1,5 +1,10 @@
 // NEWSLETTER
 
+.welcome-netmatters-container {
+	width: 100%;
+	background-color: $cloud-burst;
+}
+
 .newsletter-background {
 	background-color: $grey;
 }
@@ -39,8 +44,12 @@
 	}
 }
 
+.checkbox-container {
+	display: flex
+}
+
 .checkbox__box {
-	display: inline-block;
+	display: flex;
 	vertical-align: middle;
 	width: 32px;
 	height: 32px;
@@ -48,11 +57,6 @@
 	border-radius: 4px;
 	margin-right: 20px;
 	margin-left: 15px;
-}
-
-.checkbox-text {
-	float: right;
-	overflow: hidden;
 }
 
 .checkbox__input {
@@ -99,6 +103,7 @@
 .form-button__text {
 	height: 100%;
 }
+
 
 // .newsletter {
 // 	font-size: 32px;

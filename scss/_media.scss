@@ -84,3 +84,27 @@
     }
 }
    
+// CLIENTS
+
+@media screen and (max-width: $brkpoint-xlg) {
+    .clients {
+        display: none;
+    }
+}
+
+// WELCOME NETMATTERS MEDIA QUERIES
+
+@media screen and (max-width: $brkpoint-xlg) {
+    .welcome-netmatters {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: $brkpoint-xxlg) {
+    .welcome-trust-button {
+        margin-left: 0px;
+    }
+}
+    
+    

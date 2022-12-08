@@ -1,8 +1,10 @@
 // WELCOME
 
 .welcome-netmatters {
+    display: flex;
     background-color: $cloud-burst;
-    padding: 20px 50px 50px 50px
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .welcome-content-left {
@@ -10,6 +12,8 @@
     flex-wrap: wrap;
     color: $white;
     text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .welcome-content-left a {
@@ -24,7 +28,7 @@
 .welcome-read-button {
     background:#272936;
     line-height: 35px;
-    width: 170px;
+    width: 190px;
     padding: 10px 20px;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -47,6 +51,9 @@
     flex-wrap: wrap;
     color: $white;
     text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 .welcome-content-right a {
@@ -78,7 +85,7 @@
     display: inline-block;
     background:#4387f6;
     line-height: 35px;
-    width: 220px;
+    width: 241px;
     padding: 10px 20px;
     border-radius: 5px;
     margin: 40px 8px 0px 0px;
