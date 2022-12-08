@@ -1,4 +1,9 @@
 
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font-size: $base__font-size;
     line-height: calc($base--line / $base--font-size);

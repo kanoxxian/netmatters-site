@@ -48,3 +48,12 @@
     }
     
   }
+
+  // NEWSLETTER QUERIES
+
+  @media screen and (min-width: $brkpoint-md) {
+    .width2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }
