@@ -312,7 +312,7 @@ Header {
 }
 
 .banner-text {
-  padding: 100px;
+  padding: 100px 0px 100px 0px;
   margin-left: 50px;
   color: #fff;
 }
