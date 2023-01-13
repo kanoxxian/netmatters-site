@@ -29,7 +29,40 @@
         @include auto-mg-hor;
     }
     @include mq(xx-large) {
+        max-width: 1400px;
+        @include auto-mg-hor;
+    }
+}
+
+.width3 {
+    margin: 0 25px;
+    @include mq(large) {
+        max-width: 750px;
+        @include auto-mg-hor;
+    }
+    @include mq(x-large) {
+        max-width: 970px;
+        @include auto-mg-hor;
+    }
+    @include mq(xx-large) {
         max-width: 1200px;
         @include auto-mg-hor;
     }
 }
+
+.width4 {
+    margin: 0 25px;
+    @include mq(large) {
+        max-width: 750px;
+        @include auto-mg-hor;
+    }
+    @include mq(x-large) {
+        max-width: 970px;
+        @include auto-mg-hor;
+    }
+    @include mq(xx-large) {
+        max-width: 1100px;
+        @include auto-mg-hor;
+    }
+}
+

@@ -40,5 +40,9 @@
     border: 1px;
     border-radius: 3px;
     padding: 5px 20px;
-    margin: 31px 0px 18px 0px
+    margin: 31px 0px 18px 0px;
+    &:hover {
+        background-color: darken($dark-blue, 10%);
+        cursor: pointer;
+    }
 }

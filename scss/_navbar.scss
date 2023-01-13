@@ -3,137 +3,439 @@
 .nav-bar {
     width: 100%;
     background-color: $cloud-burst;
-    height: 80px;
-    padding: 10px 0;
+    height: 99px;
 }
 
 .nav-bar ul {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
+    margin: 0;
     padding: 0;
-    margin: 0 auto;
     list-style: none;
-    text-transform: uppercase;
     position: relative;
 }
 
-.nav-bar ul li {
-    width: 170px;
+.bespoke-software {
+    position: relative;
     float: left;
     text-align: center;
-    margin-bottom: 5px;
-    padding: 15px 0;
+    line-height: 15px;
+    margin: 0;
+    padding-top: 20px;
+    height: 99px;
+    width: 175px;
     &:hover {
         background-color: #67809f;
     }
 }
 
+.bespoke-software:hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 99px;
+    right: 0px;
+    border-left: 87.5px solid transparent;
+    border-right: 87.5px solid transparent;
+    border-top: 35px solid #67809f;
+    z-index: 99;
+    opacity: 1;
+}
+
+.bespoke-software:hover .fa-grip {
+    color: white;
+}
+
+.digital-marketing {
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 15px;
+    margin: 0;
+    padding-top: 20px;
+    height: 99px;
+    width: 175px;
+    &:hover {
+        background-color: #4183d7;
+    }
+}
+
+.digital-marketing:hover .fa-desktop {
+    color: white;
+}
+
+.telecoms-services {
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 15px;
+    margin: 0;
+    padding-top: 20px;
+    height: 99px;
+    width: 175px;
+    &:hover {
+        background-color: #2ecc71;
+    }
+}
+
+.telecoms-services:hover .fa-signal {
+    color: white;
+}
+
+.web-design {
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 15px;
+    margin: 0;
+    padding-top: 20px;
+    height: 99px;
+    width: 175px;
+    &:hover {
+        background-color: #926fb1;
+    }
+}
+
+.web-design:hover .fa-code {
+    color: white;
+}
+
+.cyber-security {
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 15px;
+    margin: 0;
+    padding-top: 20px;
+    height: 99px;
+    width: 175px;
+    &:hover {
+        background-color: #f62459;
+    }
+}
+
+.cyber-security:hover .fa-shield-dog {
+    color: white;
+}
+
+.developer-course {
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 15px;
+    margin: 0;
+    padding-top: 20px;
+    height: 99px;
+    width: 175px;
+    &:hover {
+        background-color: #ce4125;
+    }
+}
+
+.developer-course:hover .fa-graduation-cap {
+    color: white;
+}
+
 .drop-menu {
     position: absolute;
-    left: 0px;
-    top: 70px;
-    width: 1020px;
-    height: 300px;
-    padding: 40px;
+    left: 0;
+    top: 99px;
+    width: 100%;
+    height: 369px;
+    padding: 40px 430px;
+    padding-right: 0px;
     background-color: #526781;
     display: none;
 }
 
-.nav-bar ul li:hover .drop-menu {
-    display: block;
+.drop-header {
+    font-size: 32px;
+    margin-top: 20px;
+    color: $white;
 }
 
+
+.nav-bar ul li:hover .drop-menu {
+    display: block;
+    left: -435px;
+    width: 1920px;
+    text-align: left;
+}
+
+
 .drop-menu-inner {
-    width: 33.33%;
+    display: flex;
     float: left;
     margin-right: 0;
 }
 
-.drop-menu-inner p {
-    padding: 10px 0;
+.bespoke-software p {
+    padding: 5px 0;
     color: $white;
+    margin-right: 100px;
+    margin-top: 35px;
+    font-size: 19px;
 }
 
 .nav-bar ul li a {
     color: $white;
     text-decoration: none;
+    font-size: 18px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.nav-icon {
+    margin-right: 10px;
+    font-size: 19px;
 }
 
 .drop-menu2 {
     position: absolute;
-    left: 0px;
-    top: 70px;
-    width: 1020px;
-    height: 300px;
-    padding: 40px;
+    left: 0;
+    top: 99px;
+    width: 100%;
+    height: 250px;
+    padding: 40px 430px;
+    padding-right: 0px;
     background-color: #286abd;
     display: none;
 }
 
+.digital-marketing:hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 99px;
+    right: 0px;
+    border-left: 87.5px solid transparent;
+    border-right: 87.5px solid transparent;
+    border-top: 35px solid #4183d7;
+    z-index: 99;
+    opacity: 1;
+}
+
 .nav-bar ul li:hover .drop-menu2 {
     display: block;
+    left: -610px;
+    width: 1920px;
+    text-align: left;
+}
+
+.digital-marketing p {
+    padding: 5px 0;
+    color: $white;
+    margin-right: 40px;
+    margin-top: 35px;
+    font-size: 19px;
 }
 
 .drop-menu3 {
     position: absolute;
-    left: 0px;
-    top: 70px;
-    width: 1020px;
-    height: 300px;
-    padding: 40px;
+    left: 0;
+    top: 99px;
+    width: 100%;
+    height: 250px;
+    padding: 40px 430px;
+    padding-right: 0px;
     background-color: #25a25a;
     display: none;
 }
 
+.telecoms-services:hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 99px;
+    right: 0px;
+    border-left: 87.5px solid transparent;
+    border-right: 87.5px solid transparent;
+    border-top: 35px solid #2ecc71;
+    z-index: 99;
+    opacity: 1;
+}
+
 .nav-bar ul li:hover .drop-menu3 {
     display: block;
+    left: -785px;
+    width: 1920px;
+    text-align: left;
+}
+
+.telecoms-services p {
+    padding: 5px 0;
+    color: $white;
+    margin-right: 180px;
+    margin-top: 35px;
+    font-size: 19px;
 }
 
 .drop-menu4 {
     position: absolute;
-    left: 0px;
-    top: 70px;
-    width: 1020px;
-    height: 300px;
-    padding: 40px;
-    background-color: #bc2c28;
-    display: none;
-}
-
-.nav-bar ul li:hover .drop-menu4 {
-    display: block;
-}
-
-.drop-menu5 {
-    position: absolute;
-    left: 0px;
-    top: 70px;
-    width: 1020px;
-    height: 300px;
-    padding: 40px;
+    left: 0;
+    top: 99px;
+    width: 100%;
+    height: 250px;
+    padding: 40px 430px;
+    padding-right: 0px;
     background-color: #79539a;
     display: none;
 }
 
-.nav-bar ul li:hover .drop-menu5 {
-    display: block;
+.web-design:hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 99px;
+    right: 0px;
+    border-left: 87.5px solid transparent;
+    border-right: 87.5px solid transparent;
+    border-top: 35px solid #926fb1;
+    z-index: 99;
+    opacity: 1;
 }
 
-.drop-menu6 {
+.nav-bar ul li:hover .drop-menu4 {
+    display: block;
+    left: -960px;
+    width: 1920px;
+    text-align: left;
+}
+
+.web-design p {
+    padding: 5px 0;
+    color: $white;
+    margin-right: 140px;
+    margin-top: 35px;
+    font-size: 19px;
+}
+
+.drop-menu5 {
     position: absolute;
-    left: 0px;
-    top: 70px;
-    width: 1020px;
-    height: 300px;
-    padding: 40px;
+    left: 0;
+    top: 99px;
+    width: 100%;
+    height: 250px;
+    padding: 40px 430px;
+    padding-right: 0px;
     background-color: #de093f;
     display: none;
 }
 
-.nav-bar ul li:hover .drop-menu6 {
-    display: block;
+.cyber-security:hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 99px;
+    right: 0px;
+    border-left: 87.5px solid transparent;
+    border-right: 87.5px solid transparent;
+    border-top: 35px solid #f62459;
+    z-index: 99;
+    opacity: 1;
 }
 
+.nav-bar ul li:hover .drop-menu5 {
+    display: block;
+    left: -1135px;
+    width: 1920px;
+    text-align: left;
+}
+
+.cyber-security p {
+    padding: 5px 0;
+    color: $white;
+    margin-right: 100px;
+    margin-top: 35px;
+    font-size: 19px;
+}
+
+.drop-menu6 {
+    position: absolute;
+    left: 0;
+    top: 99px;
+    width: 100%;
+    height: 250px;
+    padding: 40px 430px;
+    padding-right: 0px;
+    background-color: #a3331d;
+    display: none;
+}
+
+.developer-course:hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 99px;
+    right: 0px;
+    border-left: 87.5px solid transparent;
+    border-right: 87.5px solid transparent;
+    border-top: 35px solid #ce4125;
+    z-index: 99;
+    opacity: 1;
+}
+
+.nav-bar ul li:hover .drop-menu6 {
+    display: block;
+    left: -1310px;
+    width: 1920px;
+    text-align: left;
+}
+
+.developer-course p {
+    padding: 5px 0;
+    color: $white;
+    margin-right: 150px;
+    margin-top: 35px;
+    font-size: 19px;
+}
+
+// ICON COLOURS
+
+small {
+    padding: 0;
+    font-size: 10px;
+}
+
+.fa-grip {
+    color: $dark-blue;
+    font-size: 23px;
+}
+
+
+.fa-desktop {
+    color: $blue-ribbon;
+    font-size: 23px;
+}
+
+.fa-signal {
+    color: $emerald;
+    font-size: 23px;
+}
+
+.fa-code {
+    color: $lavender;
+    font-size: 23px;
+}
+
+.fa-shield-dog {
+    color: $tuscany;
+    font-size: 23px;
+}
+
+.fa-graduation-cap {
+    color: #ce4125;
+    font-size: 23px;
+}
 
 // .main-nav {
 //     background-color: $cloud-burst;

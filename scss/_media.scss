@@ -107,4 +107,65 @@
     }
 }
     
-    
+
+// LOGO QUERIES
+
+@media screen and (max-width: $brkpoint-xxlg) {
+    .search-bar-style input {
+        display: none;
+    }
+    .search-bar-style button {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: $brkpoint-xlg) {
+    .nav-bar {
+        display: none;
+    }
+    .support {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    .search-bar-style input {
+        display: inline;
+        width: 174px;
+    }
+    .search-bar-style button {
+        margin-left: 0px;
+    }
+    .width img {
+        margin-right: 30px;
+        height: 60px;
+        width: 345px;
+    }
+    .fa-phone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $brkpoint-lg) {
+    .search-bar-style {
+        display: none;
+    }
+    .fa-phone {
+        display: inline;
+    }
+    .logo__container {
+        justify-content: space-around;
+    }
+    .hamburger {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: $brkpoint-md) {
+    .hamburger {
+        margin-left: 20px;
+    }
+    .width img {
+        margin-right: 0px;
+    }
+}

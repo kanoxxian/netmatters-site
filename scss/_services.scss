@@ -3,16 +3,32 @@
 .service-head {
     display: flex;
     justify-content: space-between;
-    width: 100%
+    align-items: flex-end;
+    padding-left: 90px;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.view-all {
+    font-size: 26px;
+    margin: 32px 0px;
+    padding-right: 90px;
+    text-decoration: none;
+    color: $black;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
 section {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
@@ -25,7 +41,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 400px;
     max-width: 100%;
     padding: 20px;
     border-radius: 16px;
@@ -98,7 +114,9 @@ section {
     text-transform: uppercase;
     color: $white;
     background-color: $dark-blue;
+    border-radius: 3px;
     padding: 6px 12px;
+    margin-top: 20px;
     display: inline-block;
     font-size: 14px;
     transition: all 0.5s ease-in-out;
@@ -111,7 +129,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 400px;
     max-width: 100%;
     padding: 20px;
     border-radius: 16px;
@@ -165,6 +183,7 @@ section {
     text-transform: uppercase;
     color: $white;
     background-color: $blue-ribbon;
+    border-radius: 3px;
     padding: 6px 12px;
     display: inline-block;
     font-size: 14px;
@@ -178,7 +197,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 400px;
     max-width: 100%;
     padding: 20px;
     border-radius: 16px;
@@ -232,7 +251,9 @@ section {
     text-transform: uppercase;
     color: $white;
     background-color: $emerald;
+    border-radius: 3px;
     padding: 6px 12px;
+    margin-top: 20px;
     display: inline-block;
     font-size: 14px;
     transition: all 0.5s ease-in-out;
@@ -248,6 +269,7 @@ section {
     width: 300px;
     max-width: 100%;
     padding: 20px;
+    margin-top: 20px;
     border-radius: 16px;
     border: 1px solid $grey;
     background-color: $white;
@@ -299,6 +321,7 @@ section {
     text-transform: uppercase;
     color: $white;
     background-color: $thunderbird;
+    border-radius: 3px;
     padding: 6px 12px;
     display: inline-block;
     font-size: 14px;
@@ -315,6 +338,7 @@ section {
     width: 300px;
     max-width: 100%;
     padding: 20px;
+    margin-top: 30px;
     border-radius: 16px;
     border: 1px solid $grey;
     background-color: $white;
@@ -366,6 +390,7 @@ section {
     text-transform: uppercase;
     color: $white;
     background-color: $tuscany;
+    border-radius: 3px;
     padding: 6px 12px;
     display: inline-block;
     font-size: 14px;
@@ -382,6 +407,7 @@ section {
     width: 300px;
     max-width: 100%;
     padding: 20px;
+    margin-top: 30px;
     border-radius: 16px;
     border: 1px solid $grey;
     background-color: $white;
@@ -434,6 +460,7 @@ section {
     color: $white;
     background-color: $lavender;
     padding: 6px 12px;
+    border-radius: 3px;
     display: inline-block;
     font-size: 14px;
     transition: all 0.5s ease-in-out;
@@ -449,6 +476,7 @@ section {
     width: 300px;
     max-width: 100%;
     padding: 20px;
+    margin-top: 30px;
     border-radius: 16px;
     border: 1px solid $grey;
     background-color: $white;
@@ -501,7 +529,115 @@ section {
     color: $white;
     background-color: $disco;
     padding: 6px 12px;
+    border-radius: 3px;
     display: inline-block;
     font-size: 14px;
     transition: all 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width: $brkpoint-xxlg) {
+    .service-card-1 {
+        width: 300px;
+    }
+    .service-card-2 {
+        width: 300px;
+    }
+    .service-card-2 a {
+        margin-top: 20px;
+    }
+    .service-card-3 {
+        width: 300px;
+    }
+    .service-card-4 {
+        width: 460px;
+        margin-right: 25px;
+    }
+    .service-card-5 {
+        width: 460px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .service-card-6 {
+        width: 460px;
+        margin-right: 25px;
+    }
+    .service-card-7 {
+        width: 460px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: $brkpoint-xlg) {
+    section {
+        max-width: 600px;
+    }
+    .service-card-1 {
+        width: 100%;
+    }
+    .service-card-2 {
+        width: 100%;
+    }
+    .service-card-3 {
+        width: 100%;
+    }
+    .service-card-4 {
+        margin: 0;
+        margin-top: 20px;
+        width: 280px;
+    }
+    .service-card-5 {
+        margin: 0;
+        margin-top: 20px;
+        width: 280px;
+    }
+    .service-card-6 {
+        margin: 0;
+        margin-top: 20px;
+        width: 280px;
+    }
+    .service-card-7 {
+        margin: 0;
+        margin-top: 20px;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: $brkpoint-lg) {
+    section {
+        flex-direction: column;
+    }
+    .service-card-1 {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .service-card-2 {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .service-card-3 {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .service-card-4 {
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .service-card-5 {
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .service-card-6 {
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .service-card-7 {
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+
 }
