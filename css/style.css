@@ -261,6 +261,13 @@ Header {
   position: relative;
 }
 
+.drop-menu-inner p {
+  cursor: pointer;
+}
+.drop-menu-inner p:hover {
+  text-decoration: underline;
+}
+
 .bespoke-software {
   position: relative;
   float: left;
@@ -304,6 +311,7 @@ Header {
   width: 175px;
 }
 .digital-marketing:hover {
+  cursor: pointer;
   background-color: #4183d7;
 }
 
@@ -426,9 +434,6 @@ Header {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-}
-.nav-bar ul li a:hover {
-  text-decoration: underline;
 }
 
 .nav-icon {

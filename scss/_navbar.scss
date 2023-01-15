@@ -17,6 +17,13 @@
     position: relative;
 }
 
+.drop-menu-inner p {
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .bespoke-software {
     position: relative;
     float: left;
@@ -30,6 +37,7 @@
         background-color: #67809f;
     }
 }
+
 
 .bespoke-software:hover::before {
     content: "";
@@ -59,6 +67,7 @@
     height: 99px;
     width: 175px;
     &:hover {
+        cursor: pointer;
         background-color: #4183d7;
     }
 }
@@ -184,9 +193,9 @@
     color: $white;
     text-decoration: none;
     font-size: 18px;
-    &:hover {
-        text-decoration: underline;
-    }
+    // &:hover {
+    //     text-decoration: underline;
+    // }
 }
 
 .nav-icon {
@@ -205,6 +214,7 @@
     background-color: #286abd;
     display: none;
 }
+
 
 .digital-marketing:hover::before {
     content: "";
