@@ -6,18 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/4be6635281.js" crossorigin="anonymous"></script>
-<title>Full Service Digital Agency | Cambridgeshire & Norfolk| Netmatters</title>
-<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-  
+    <link rel="stylesheet" href="./owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4be6635281.js" crossorigin="anonymous"></script>
+    <title>Full Service Digital Agency | Cambridgeshire & Norfolk| Netmatters</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
+
+<div id="cookie-modal" class="hidden">
+  <div id="consent-popup">
+    <h3 class="cookie-header">Cookies Policy</h3>
+    <p class="cookie-text">Our webpage uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<a href="#">Privacy Policy</a>" otherwise click "Accept Cookies" to enter.</p>
+    <div class="modal-buttons">
+    <button class="cookie-change">CHANGE SETTINGS</button><button id="accept" class="accept-cookies">ACCEPT COOKIES</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="pop-out-nav">
+  <div class="pop-out-header"><a class="header-a" href="#">Services</a>
+    <ul>
+      <li><a href="#">BESPOKE SOFTWARE</a></li>
+      <li><a href="#">IT SUPPORT</a></li>
+      <li><a href="#">DIGITAL MARKETING</a></li>
+      <li><a href="#">TELECOMS SERVICES</a></li>
+      <li><a href="#">WEB DESIGN</a></li>
+      <li><a href="#">CYBER SECURITY</a></li>
+    </ul>
+    <div class="pop-out-header2"><a class="header-a" href="#">Our Work</a>
+      <ul>
+        <li><a href="#">CASE STUDIES</a></li>
+      </ul>
+    </div>
+    <div class="pop-out-header3"><a class="header-a" href="#">Our Knowledge</a>
+      <ul>
+        <li><a href="#">TECHNOLOGIES</a></li>
+        <li><a href="#">INDUSTRIES</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">INSIGHTS</a></li>
+      </ul>
+    </div>
+    <div class="pop-out-header4"><a class="header-a" href="#">Training</a>
+      <ul>
+        <li><a href="#">TRAIN FOR A CAREER IN TECH</a></li>
+        <li><a href="#">SKILLS BOOTCAMP</a></li>
+        <li><a href="#">SCS FREEQUENTLY ASKED QUESTIONS</a></li>
+        <li><a href="#">SCION COLLABORATORS</a></li>
+      </ul>
+    </div>
+    <div class="pop-out-header5"><a class="header-a" href="#">Our Company</a>
+      <ul>
+        <li><a href="#">WHY CHOOSE US?</a></li>
+        <li><a href="#">OUR CULTURE</a></li>
+        <li><a href="#">OUR TEAM</a></li>
+        <li><a href="#">OUR CAREERS</a></li>
+        <li><a href="#">OUR BENEFITS</a></li>
+      </ul>
+    </div>
+    <div class="pop-out-header6"><a class="header-a" href="#">Contact Us</a>
+      <ul>
+        <li><a href="#">CAMBRIDGE OFFICE</a></li>
+        <li><a href="#">WYMONDHAM OFFICE</a></li>
+        <li><a href="#">GREAT YARMOUTH OFFICE</a></li>
+      </ul>
+    </div>
+    <div class="pop-out-header7"><a class="header-a" href="#">Covid Risk Assessments</a></div>
+</div>
+</div>
+<div id="darken"></div>
+<main class="main"> 
     <!--Logo-->
-    
+
     <div class="logo">
       <div class="width3">
         
@@ -47,6 +112,7 @@
         </div>
       </div>
     </div>
+
 
     <!--NAV-->
 
@@ -199,18 +265,66 @@
 
     <!--BANNER-->
 
-    <div class="banner-container">
-      <div class="banner">
-        <div class="width">
-        <div class="banner-text">
-          <h1>The East of England's Leading <br>Technology Company</h1>
-          <p>Performance-driven digital and Technology services <br>with complete transparency.</p>
-          <button class="banner-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-      </div>
+<div class="banner-container">
+<div id="one" class="carousel-1 owl-carousel owl-theme">
+  <div class="item">
+    <div class="gradient">
+      <img class="banner-img" src="img/carousel1.jpg">
     </div>
+      <h1 class="netmatters-banner-h1">The East of England's Leading <br>Technology Company</h1>
+      <p class="netmatters-banner-p">Performance-Driven digital and technology services <br>with complete transparency.</p>
+      <button class="banner-button">CONTACT US<i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div class="item">
+    <div class="gradient">
+      <img src="img/carousel2.jpg">
     </div>
-    
+    <h1 class="bespoke-banner-h1">Bespoke Software</h1>
+    <p class="bespoke-banner-p">Delivering expert bespoke software <br>solutions across a range of industries.</p>
+    <button class="banner-button2">FIND OUT MORE<i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div class="item">
+    <div class="gradient">
+      <img src="img/carousel3.jpg">
+    </div>
+    <h1 class="support-banner-h1">IT Support</h1>
+    <p class="support-banner-p">Fast and cost-effective IT Support <br>services for your business.</p>
+    <button class="banner-button3">FIND OUT MORE<i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div class="item">
+    <div class="gradient">
+      <img src="img/carousel4.jpg">
+    </div>
+    <h1 class="marketing-banner-h1">Digital Marketing</h1>
+    <p class="marketing-banner-p">Generating your new business through <br>results-driven marketing actiivities.</p>
+    <button class="banner-button4">FIND OUT MORE<i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div class="item">
+    <div class="gradient">
+      <img src="img/carousel5.jpg">
+    </div>
+    <h1 class="telecoms-banner-h1">Telecoms Services</h1>
+    <p class="telecoms-banner-p">A new approach to connectivity, see <br>how we can help your business.</p>
+    <button class="banner-button5">FIND OUT MORE<i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div class="item">
+    <div class="gradient">
+      <img src="img/carousel6.jpg">
+    </div>
+    <h1 class="design-banner-h1">Web Design</h1>
+    <p class="design-banner-p">For businesses looking to make a strong <br>and effective first impression.</p>
+    <button class="banner-button6">FIND OUT MORE<i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div class="item">
+    <div class="gradient">
+      <img src="img/carousel7.jpg">
+    </div>
+    <h1 class="cyber-banner-h1">Cyber Security</h1>
+    <p class="cyber-banner-p">keeping businesses and their customers<br>sensitive information protected.</p>
+    <button class="banner-button7">FIND OUT MORE<i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</div>
+</div>
 
     <!--READMORE GRID-->
   <div class="width2">
@@ -286,16 +400,19 @@
   </div>
         <!--AWARDS-->
 
-        <div class="awards">
-          <img src="./img/qms.jpg" alt="">
-          <img src="./img/princess-royal-training.jpg" alt="">
-          <img src="./img/PPC_logo.jpg" alt="">
-          <img src="./img/norfolk-carbon-charter.jpg" alt="">
-          <img src="./img/iso_27001.jpg" alt="">
-          <img src="./img/google-partner.jpg" alt="">
-          <img src="./img/future-50.jpg" alt="">
-          <img src="./img/skills-of-tomorrow.jpg" alt="">
+      <div>
+        <div id="two" class="awards carousel-2 owl-carousel owl-theme">
+          <div class="item"><div><img src="./img/qms.jpg" alt=""></div></div>
+          <div class="item"><div><img src="./img/princess-royal-training.jpg" alt=""></div></div>
+          <div class="item"><div><img src="./img/PPC_logo.jpg" alt=""></div></div>
+          <div class="item"><div><img src="./img/norfolk-carbon-charter.jpg" alt=""></div></div>
+          <div class="item"><div><img src="./img/iso_27001.jpg" alt=""></div></div>
+          <div class="item"><div><img src="./img/google-partner.jpg" alt=""></div></div>
+          <div class="item"><div><img src="./img/future-50.jpg" alt=""></div></div>
+          <div class="item"><div><img src="./img/skills-of-tomorrow.jpg" alt=""></div></div>
+          <div class="item"><div><img src="./img/investing-in-future-growth.jpg" alt=""></div></div>
         </div>
+      </div>
 
     <!--WELCOME-->
 <div class="welcome-netmatters-container">
@@ -481,11 +598,11 @@
     </form>
   </div>
 </div>
+</main> 
 
-</body>
-
-<!--FOOTER-->
 <footer>
+<!--FOOTER-->
+
   <div class="footer-container">
     <div class="width">
       <div class="footer-container-row">
@@ -568,6 +685,12 @@
   </div>
 </div>
 </div>
+</div>
+</footer>
 
-</footer> 
+<script src="/js/jquery-3.6.3.js"></script>
+<script src="/js/cookie.js"></script>
+<script src="/owlcarousel/owl.carousel.js"></script>
+<script src="/owlcarousel/owl.carousel.min.js"></script>
+</body>
 </html>

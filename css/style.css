@@ -244,6 +244,100 @@ Header {
   font-size: 24px;
 }
 
+#cookie-modal {
+  position: fixed;
+  display: block;
+  z-index: 101;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#cookie-modal.hidden {
+  display: none;
+}
+
+#consent-popup {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 600px;
+  padding: 15px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-top: 20px;
+}
+
+.cookie-change {
+  background-color: #999aa2;
+  color: #fff;
+  height: auto;
+  width: 255px;
+  line-height: 35px;
+  padding: 5px 15px;
+  margin-top: 20px;
+  margin-right: 15px;
+  font-size: 17px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+.cookie-change:hover {
+  background: #7e808a;
+}
+
+.accept-cookies {
+  background-color: #926fb1;
+  color: #fff;
+  height: auto;
+  width: 255px;
+  line-height: 35px;
+  padding: 5px 15px;
+  margin-top: 20px;
+  margin-right: 15px;
+  font-size: 17px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+.accept-cookies:hover {
+  background: #79539a;
+}
+
+.cookie-text {
+  line-height: 30px;
+  color: #666;
+  padding-top: 20px;
+}
+
+.cookie-text a {
+  text-decoration: none;
+  color: #333645;
+}
+.cookie-text a:hover {
+  text-decoration: underline;
+}
+
+.cookie-header {
+  color: #333645;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+
 .nav-bar {
   width: 100%;
   background-color: #333645;
@@ -401,6 +495,7 @@ Header {
   padding-right: 0px;
   background-color: #526781;
   display: none;
+  z-index: 98;
 }
 
 .drop-header {
@@ -451,6 +546,7 @@ Header {
   padding-right: 0px;
   background-color: #286abd;
   display: none;
+  z-index: 98;
 }
 
 .digital-marketing:hover::before {
@@ -492,6 +588,7 @@ Header {
   padding-right: 0px;
   background-color: #25a25a;
   display: none;
+  z-index: 98;
 }
 
 .telecoms-services:hover::before {
@@ -533,6 +630,7 @@ Header {
   padding-right: 0px;
   background-color: #79539a;
   display: none;
+  z-index: 98;
 }
 
 .web-design:hover::before {
@@ -574,6 +672,7 @@ Header {
   padding-right: 0px;
   background-color: #de093f;
   display: none;
+  z-index: 98;
 }
 
 .cyber-security:hover::before {
@@ -615,6 +714,7 @@ Header {
   padding-right: 0px;
   background-color: #a3331d;
   display: none;
+  z-index: 98;
 }
 
 .developer-course:hover::before {
@@ -681,50 +781,213 @@ small {
   font-size: 23px;
 }
 
+.item {
+  position: relative;
+  height: 100%;
+  max-height: 550px;
+}
+
+.gradient::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(270deg, transparent 25%, #000);
+}
+
+.banner-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .banner-container {
+  position: relative;
   width: 100%;
   height: 60vh;
 }
 
-.banner {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 70%;
-  background: linear-gradient(270deg, transparent 25%, #000), url("../img/banner.jpg");
-}
-
-.banner-text {
-  padding: 100px 0px 100px 0px;
-  margin-left: 50px;
+.banner-container h1 {
+  position: absolute;
+  font-size: 64px;
   color: #fff;
+  font-weight: 500;
+  line-height: 80px;
+  left: 360px;
 }
 
-.banner-text h1 {
-  font-size: 40px;
-  margin: 0px 0px 20px 0px;
+.netmatters-banner-h1 {
+  top: 50px;
 }
 
-.banner-text p {
-  font-size: 20px;
-  text-align: left;
+.support-banner-h1,
+.design-banner-h1,
+.marketing-banner-h1,
+.telecoms-banner-h1,
+.cyber-banner-h1,
+.bespoke-banner-h1 {
+  top: 70px;
 }
 
-.banner-btn {
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 50px;
+.banner-container p {
+  position: absolute;
+  font-size: 26px;
   color: #fff;
-  background-color: #67809f;
-  border: 1px;
+  font-weight: 500;
+  line-height: 40px;
+  left: 360px;
+}
+
+.bespoke-banner-p,
+.support-banner-p,
+.marketing-banner-p,
+.telecoms-banner-p,
+.design-banner-p,
+.cyber-banner-p {
+  top: 180px;
+}
+
+.netmatters-banner-p {
+  top: 235px;
+}
+
+.banner-button {
+  position: absolute;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  background-color: #926fb1;
+  border: 0;
   border-radius: 3px;
-  padding: 5px 20px;
-  margin: 31px 0px 18px 0px;
+  padding: 20px;
+  top: 375px;
+  left: 360px;
 }
-.banner-btn:hover {
-  background-color: #526781;
+.banner-button:hover {
   cursor: pointer;
+  background: #79539a;
+}
+
+.banner-button2 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  background-color: #67809f;
+  border: 0;
+  border-radius: 3px;
+  padding: 20px;
+  top: 325px;
+  left: 360px;
+}
+.banner-button2:hover {
+  cursor: pointer;
+  background: #526781;
+}
+
+.banner-button3 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  background-color: #4183d7;
+  border: 0;
+  border-radius: 3px;
+  padding: 20px;
+  top: 325px;
+  left: 360px;
+}
+.banner-button3:hover {
+  cursor: pointer;
+  background: #286abd;
+}
+
+.banner-button4 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  background-color: #2ecc71;
+  border: 0;
+  border-radius: 3px;
+  padding: 20px;
+  top: 325px;
+  left: 360px;
+}
+.banner-button4:hover {
+  cursor: pointer;
+  background: #25a25a;
+}
+
+.banner-button5 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  background-color: #d64541;
+  border: 0;
+  border-radius: 3px;
+  padding: 20px;
+  top: 325px;
+  left: 360px;
+}
+.banner-button5:hover {
+  cursor: pointer;
+  background: #bc2c28;
+}
+
+.banner-button6 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  background-color: #926fb1;
+  border: 0;
+  border-radius: 3px;
+  padding: 20px;
+  top: 325px;
+  left: 360px;
+}
+.banner-button6:hover {
+  cursor: pointer;
+  background: #79539a;
+}
+
+.banner-button7 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  background-color: #f62459;
+  border: 0;
+  border-radius: 3px;
+  padding: 20px;
+  top: 325px;
+  left: 360px;
+}
+.banner-button7:hover {
+  cursor: pointer;
+  background: #de093f;
+}
+
+.banner-button i,
+.banner-button2 i,
+.banner-button3 i,
+.banner-button4 i,
+.banner-button5 i,
+.banner-button6 i,
+.banner-button7 i {
+  margin-left: 15px;
 }
 
 .service-head {
@@ -742,7 +1005,7 @@ small {
   margin: 32px 0px;
   padding-right: 90px;
   text-decoration: none;
-  color: #070707;
+  color: black;
 }
 .view-all:hover {
   text-decoration: underline;
@@ -1358,8 +1621,7 @@ section {
 }
 
 .awards img {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0 20px;
   filter: saturate(0);
 }
 .awards img:hover {
@@ -2071,4 +2333,101 @@ footer {
   .width img {
     margin-right: 0px;
   }
+}
+.pop-out-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #333645;
+  overflow: auto;
+  z-index: 102;
+  color: #fff;
+  transform: translateX(350px);
+  transition: transform 0.2s;
+}
+
+.bodyfixed {
+  overflow: hidden;
+}
+
+.main {
+  transition: transform 0.2s;
+  height: 100%;
+  overflow: hidden;
+}
+
+.darken {
+  content: "";
+  width: 100%;
+  height: 436%;
+  background: black;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 101;
+  top: -50px;
+  right: 0;
+  cursor: pointer;
+}
+
+.nav-open .pop-out-nav {
+  transform: translateX(0);
+}
+
+.nav-open .main {
+  transform: translateX(-350px);
+}
+
+.pop-out-header {
+  background: #373b4b;
+  padding-top: 15px;
+}
+
+.pop-out-header2,
+.pop-out-header3,
+.pop-out-header4,
+.pop-out-header5,
+.pop-out-header6,
+.pop-out-header7 {
+  background: #373b4b;
+}
+
+.pop-out-nav a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-a {
+  padding-left: 20px;
+}
+
+.pop-out-nav ul {
+  list-style: none;
+  padding: 0;
+  background: #373b4b;
+}
+.pop-out-nav ul:hover {
+  cursor: pointer;
+}
+
+.pop-out-nav ul li {
+  padding: 15px 25px;
+  background-color: #282b36;
+}
+
+.pop-out-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.pop-out-nav ul li a::before {
+  content: "»";
+  padding-right: 15px;
+}
+
+.fa-chevron-right {
+  font-size: 5px;
 }/*# sourceMappingURL=style.css.map */

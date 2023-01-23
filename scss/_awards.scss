@@ -7,8 +7,7 @@
 }
 
 .awards img {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 20px;
     filter: saturate(0);
     &:hover {
         filter: saturate(100%)
