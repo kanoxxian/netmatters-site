@@ -22,6 +22,18 @@
     position: relative;
     display: inline-block;
   }
+
+  .h3-line::after {
+    position: relative;
+    display: block;
+    content: "";
+    left: 100px;
+    top: 25px;
+    border-top: .3rem solid white;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}
   
  
   .tooltip .tooltiptext {
@@ -35,14 +47,56 @@
     bottom: 120%;
     left: 0%;
     margin-left: -60px;
-   
+    position: absolute;
+    z-index: 1;
+  }
 
+  .tooltip .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: $cloud-burst;
+    color: $white;
+    text-align: center;
+    padding: 5px 10px;
+    width: 300px;
+    bottom: 120%;
+    left: 0%;
+    margin-left: -35px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: $cloud-burst;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    width: 300px;
+    bottom: 120%;
+    left: 0%;
+    margin-left: -115px;
     position: absolute;
     z-index: 1;
   }
   
+  .tooltip .tooltiptext4 {
+    visibility: hidden;
+    width: 120px;
+    background-color: $cloud-burst;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    width: 300px;
+    bottom: 120%;
+    left: 0%;
+    margin-left: 5px;
+    position: absolute;
+    z-index: 1;
+  }
   
-  .tooltip:hover .tooltiptext {
+  .tooltip:hover .tooltiptext, .tooltip:hover .tooltiptext2, .tooltip:hover .tooltiptext3, .tooltip:hover .tooltiptext4 {
     visibility: visible;
   }
   
@@ -54,6 +108,39 @@
   }
   
   .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    margin-left: 0px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: $cloud-burst transparent transparent transparent;
+  }
+
+  .tooltip .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    margin-left: 0px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: $cloud-burst transparent transparent transparent;
+  }
+
+  .tooltip .tooltiptext3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    margin-left: 0px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: $cloud-burst transparent transparent transparent;
+  }
+
+  .tooltip .tooltiptext4::after {
     content: "";
     position: absolute;
     top: 100%;

@@ -32,7 +32,7 @@
     margin: 0;
     padding-top: 20px;
     height: 99px;
-    width: 175px;
+    width: 172px;
     &:hover {
         background-color: #67809f;
     }
@@ -57,6 +57,78 @@
     color: white;
 }
 
+.it-support {
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 15px;
+    margin: 0;
+    padding-top: 20px;
+    height: 99px;
+    width: 172px;
+    &:hover {
+        background-color: #d64541;
+    }
+}
+
+
+.it-support:hover::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 99px;
+    right: 0px;
+    border-left: 87.5px solid transparent;
+    border-right: 87.5px solid transparent;
+    border-top: 35px solid #d64541;
+    z-index: 99;
+    opacity: 1;
+}
+
+.it-support:hover .fa-laptop-medical {
+    color: white;
+}
+
+.it-support p {
+    padding: 5px 0;
+    color: $white;
+    // margin-right: 140px;
+    margin-top: 35px;
+    font-size: 19px;
+}
+
+.middle-p {
+    margin-left: 140px;
+    margin-right: 205px;
+}
+
+.middle-p2 {
+    margin-left: 15px;
+    margin-right: 128px;
+}
+
+.middle-p3 {
+    margin-left: 140px;
+    margin-right: 220px;
+}
+
+.middle-p4 {
+    margin-left: 105px;
+    margin-right: 140px;
+}
+
+.middle-p5 {
+    margin-left: 55px;
+    margin-right: 155px;
+}
+
+.middle-p6 {
+    margin-left: 95px;
+    margin-right: 265px;
+}
+
+
 .digital-marketing {
     position: relative;
     float: left;
@@ -65,7 +137,7 @@
     margin: 0;
     padding-top: 20px;
     height: 99px;
-    width: 175px;
+    width: 172px;
     &:hover {
         cursor: pointer;
         background-color: #4183d7;
@@ -84,7 +156,7 @@
     margin: 0;
     padding-top: 20px;
     height: 99px;
-    width: 175px;
+    width: 172px;
     &:hover {
         background-color: #2ecc71;
     }
@@ -102,7 +174,7 @@
     margin: 0;
     padding-top: 20px;
     height: 99px;
-    width: 175px;
+    width: 172px;
     &:hover {
         background-color: #926fb1;
     }
@@ -120,7 +192,7 @@
     margin: 0;
     padding-top: 20px;
     height: 99px;
-    width: 175px;
+    width: 172px;
     &:hover {
         background-color: #f62459;
     }
@@ -138,7 +210,7 @@
     margin: 0;
     padding-top: 20px;
     height: 99px;
-    width: 175px;
+    width: 170px;
     &:hover {
         background-color: #ce4125;
     }
@@ -170,7 +242,7 @@
 
 .nav-bar ul li:hover .drop-menu {
     display: block;
-    left: -435px;
+    left: -440px;
     width: 1920px;
     text-align: left;
 }
@@ -194,9 +266,6 @@
     color: $white;
     text-decoration: none;
     font-size: 18px;
-    // &:hover {
-    //     text-decoration: underline;
-    // }
 }
 
 .nav-icon {
@@ -225,8 +294,8 @@
     height: 0;
     top: 99px;
     right: 0px;
-    border-left: 87.5px solid transparent;
-    border-right: 87.5px solid transparent;
+    border-left: 86px solid transparent;
+    border-right: 86px solid transparent;
     border-top: 35px solid #4183d7;
     z-index: 99;
     opacity: 1;
@@ -234,7 +303,7 @@
 
 .nav-bar ul li:hover .drop-menu2 {
     display: block;
-    left: -610px;
+    left: -782px;
     width: 1920px;
     text-align: left;
 }
@@ -242,7 +311,7 @@
 .digital-marketing p {
     padding: 5px 0;
     color: $white;
-    margin-right: 40px;
+    // margin-right: 40px;
     margin-top: 35px;
     font-size: 19px;
 }
@@ -267,8 +336,8 @@
     height: 0;
     top: 99px;
     right: 0px;
-    border-left: 87.5px solid transparent;
-    border-right: 87.5px solid transparent;
+    border-left: 86px solid transparent;
+    border-right: 86px solid transparent;
     border-top: 35px solid #2ecc71;
     z-index: 99;
     opacity: 1;
@@ -276,7 +345,7 @@
 
 .nav-bar ul li:hover .drop-menu3 {
     display: block;
-    left: -785px;
+    left: -955px;
     width: 1920px;
     text-align: left;
 }
@@ -284,7 +353,7 @@
 .telecoms-services p {
     padding: 5px 0;
     color: $white;
-    margin-right: 180px;
+    // margin-right: 180px;
     margin-top: 35px;
     font-size: 19px;
 }
@@ -309,8 +378,8 @@
     height: 0;
     top: 99px;
     right: 0px;
-    border-left: 87.5px solid transparent;
-    border-right: 87.5px solid transparent;
+    border-left: 86px solid transparent;
+    border-right: 86px solid transparent;
     border-top: 35px solid #926fb1;
     z-index: 99;
     opacity: 1;
@@ -318,7 +387,7 @@
 
 .nav-bar ul li:hover .drop-menu4 {
     display: block;
-    left: -960px;
+    left: -1125px;
     width: 1920px;
     text-align: left;
 }
@@ -326,7 +395,7 @@
 .web-design p {
     padding: 5px 0;
     color: $white;
-    margin-right: 140px;
+    // margin-right: 140px;
     margin-top: 35px;
     font-size: 19px;
 }
@@ -360,7 +429,7 @@
 
 .nav-bar ul li:hover .drop-menu5 {
     display: block;
-    left: -1135px;
+    left: -1300px;
     width: 1920px;
     text-align: left;
 }
@@ -368,7 +437,7 @@
 .cyber-security p {
     padding: 5px 0;
     color: $white;
-    margin-right: 100px;
+    // margin-right: 100px;
     margin-top: 35px;
     font-size: 19px;
 }
@@ -402,7 +471,7 @@
 
 .nav-bar ul li:hover .drop-menu6 {
     display: block;
-    left: -1310px;
+    left: -1470px;
     width: 1920px;
     text-align: left;
 }
@@ -410,10 +479,32 @@
 .developer-course p {
     padding: 5px 0;
     color: $white;
-    margin-right: 150px;
+    // margin-right: 150px;
     margin-top: 35px;
     font-size: 19px;
 }
+
+.drop-menu7 {
+    position: absolute;
+    left: 0;
+    top: 99px;
+    width: 100%;
+    height: 250px;
+    padding: 40px 430px;
+    padding-right: 0px;
+    background-color: #bc2c28;
+    display: none;
+    z-index: 98;
+}
+
+.nav-bar ul li:hover .drop-menu7 {
+    display: block;
+    left: -612px;
+    width: 1920px;
+    text-align: left;
+}
+
+
 
 // ICON COLOURS
 
@@ -450,6 +541,11 @@ small {
 
 .fa-graduation-cap {
     color: #ce4125;
+    font-size: 23px;
+}
+
+.fa-laptop-medical {
+    color: #d64541;
     font-size: 23px;
 }
 

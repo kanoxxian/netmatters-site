@@ -51,6 +51,46 @@
 
   // NEWSLETTER QUERIES
 
+  @media screen and (min-width: $brkpoint-sm) {
+    .checkbox-container label::before {
+        width: 75px;
+    }
+    .checkbox-container {
+        margin-left: 15px;
+    }
+  }
+  @media screen and (min-width: $brkpoint-md) {
+    .checkbox-container label::before {
+        width: 60px;
+    }
+    .checkbox-container {
+        margin-left: 15px;
+    }
+  }
+
+  @media screen and (min-width: $brkpoint-xlg) {
+    .checkbox-container label::before {
+        width: 32px;
+    }
+    .checkbox-container {
+        margin-left: 50px;
+    }
+  }
+
+  @media screen and (min-width: $brkpoint-md) {
+    .newsletter-h2 {
+        margin-left: 15px;
+    }
+  }
+
+
+  @media screen and (min-width: $brkpoint-lg) {
+    .newsletter-h2 {
+        margin-left: 15px;
+    }
+  }
+  
+
   @media screen and (min-width: $brkpoint-xlg) {
     .form-item-container {
         display: flex;
@@ -65,8 +105,7 @@
     .newsletter-h2 {
         margin-left: 50px;
     }
-
-  }
+}
 
 @media screen and (min-width: $brkpoint-xxlg) {  
     .form-item-container {
@@ -117,6 +156,9 @@
     .search-bar-style button {
         margin-left: 20px;
     }
+    .support {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: $brkpoint-xlg) {
@@ -154,18 +196,158 @@
         display: inline;
     }
     .logo__container {
-        justify-content: space-around;
+        justify-content: space-between;
+        gap: 10px
     }
     .hamburger {
         margin-left: 0;
     }
+    .view-all {
+        padding-right: 0;
+    }
+    .service-head {
+        padding-left: 0;
+    }
+    .search-bar-logo {
+        display: block;
+    }
+    .phone-hidden {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: $brkpoint-md) {
-    .hamburger {
-        margin-left: 20px;
-    }
     .width img {
         margin-right: 0px;
+    }
+    .phone-hidden {
+        margin-left: 0;
+    }
+}
+
+// BANNER QUERIES
+
+@media screen and (max-width: $brkpoint-xxlg) {
+    .banner-container h1 {
+        left: 90px;
+    }
+    .banner-container p {
+        left: 90px;
+    }
+    .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+        left: 90px;
+    }
+}
+
+
+@media screen and (max-width: $brkpoint-xlg) {
+    .banner-container h1 {
+        font-size: 40px;
+        font-weight: $font-weight--mediumbold;
+        text-align: center;
+        line-height: 45px;
+        top: 110px;
+    }
+    .banner-container p {
+        font-size: 20px;
+        font-weight: $font-weight--mediumbold;
+        text-align: center;
+        left: 250px;
+        line-height: 35px;
+    }
+    .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+        left: 320px;
+    }
+    #banner-netmatters {
+        left: 140px;
+    }
+    #banner-netmatters-p {
+        left: 160px;
+    }
+    .banner-button {
+        width: 232px;
+    }
+    .bespoke-banner-h1 {
+        left: 260px !important
+    }
+    .support-banner-h1 {
+        left: 330px !important
+    }
+    .support-banner-p {
+        left: 260px !important
+    }
+    .marketing-banner-h1 {
+        left: 260px !important
+    }
+    .telecoms-banner-h1 {
+        left: 250px !important
+    }
+    .design-banner-h1 {
+        left: 320px !important
+    }
+    .cyber-banner-h1 {
+        left: 300px !important
+    }
+}
+
+@media screen and (max-width: $brkpoint-md) {
+    .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+        left: 170px !important
+    }
+    #banner-netmatters {
+        top: 50px !important;
+        left: 0px !important;
+    }
+    #banner-netmatters-p {
+        top: 220px !important;
+        left: 25px !important;
+    }
+    .bespoke-banner-h1 {
+        left: 90px !important;
+        top: 140px !important;
+    }
+    .bespoke-banner-p {
+        left: 75px !important;
+        top: 210px !important;
+    }
+    .support-banner-h1 {
+        left: 180px !important;
+        top: 140px !important;
+    }
+    .support-banner-p {
+        left: 110px !important;
+        top: 210px !important;
+    }
+    .marketing-banner-h1 {
+        left: 110px !important;
+        top: 140px !important;
+    }
+    .marketing-banner-p {
+        left: 85px !important;
+        top: 210px !important;
+    }
+    .telecoms-banner-h1 {
+        left: 95px !important;
+        top: 140px !important;
+    }
+    .telecoms-banner-p {
+        left: 95px !important;
+        top: 210px !important;
+    }
+    .design-banner-h1 {
+        left: 165px !important;
+        top: 140px !important;
+    }
+    .design-banner-p {
+        left: 80px !important;
+        top: 210px !important;
+    }
+    .cyber-banner-h1 {
+        left: 130px !important;
+        top: 140px !important;
+    }
+    .cyber-banner-p {
+        left: 80px !important;
+        top: 210px !important;
     }
 }

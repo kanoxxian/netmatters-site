@@ -2,6 +2,7 @@
 
 a {
     text-decoration: none;
+    color: $black;
 }
 
 
@@ -34,13 +35,29 @@ a {
     border: 1px solid #CCC;
     border-radius: 0 0 3px 3px;
     margin: 20px;
-    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
 }
+
+.blog-box2 {
+    width: 370px;
+    background-color: $white;
+    border: 1px solid #CCC;
+    border-radius: 0 0 3px 3px;
+    margin: 20px;
+}
+
+.blog-box3 {
+    width: 370px;
+    background-color: $white;
+    border: 1px solid #CCC;
+    border-radius: 0 0 3px 3px;
+    margin: 20px;
+}
+
 
 
 .blog-img {
     width: 100%;
-    height: auto;
+    height: 220px;
 }
 
 .blog-img img {
@@ -65,7 +82,8 @@ a {
 .blog-text {
     padding: 0px 30px 30px 30px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    z-index: -1;
 }
 
 .blog-text span {
@@ -74,14 +92,17 @@ a {
 }
 
 .blog-text .blog-title {
-    font-size: 1.3rem;
-    font-weight: $font-weight--bold;
+    font-size: 1rem;
+    font-weight: $font-weight--mediumbold;
     color: $lavender;
+    line-height: 1.5rem;
+    margin-top: 30px;
 }
 
 .blog-text p {
-    color: #9b9b9b;
-    font-size: 0.9rem;
+    color: rgb(102, 102, 102);
+    font-size: 13px;
+    line-height: 22px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -107,9 +128,9 @@ a {
 
 .logo-date span {
     color: $black;
-    font-weight: $font-weight--bold;
+    font-weight: $font-weight--medium;
     font-size: 14px;
-    margin-left: 30px;
+    margin-left: 25px;
     position: relative;
     bottom: 20px;
 }
@@ -118,22 +139,24 @@ a {
     color: #8a8a8a;
     font-size: 14px;
     position: relative;
-    bottom: 35px;
+    bottom: 20px;
     left: 81px;
+    margin: 0;
 }
 
 .readmore-btn {
     background:#5583ac;
+    font-size: 17px;
     line-height: 35px;
-    width: 120px;
-    padding:5px 10px;
+    width: 125px;
+    padding:6px 10px;
     border-radius:3px;
     text-align: center;
 }
 
 .readmore-btn a {
     color: $white;
-    font-weight: $font-weight--thin;
+    font-weight: $font-weight--light;
     text-transform: uppercase;
 }
 
@@ -153,4 +176,36 @@ a {
 
 .latest-news h2 {
     margin-bottom: 0px;
+}
+
+.blog-shadow {
+    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+}
+
+.viewall3 {
+    display: none;
+    font-size: 26px;
+    margin: 32px 0px;
+    text-decoration: none;
+    color: black;
+    font-weight: $font-weight--mediumbold;
+    text-align: center;
+}
+
+@media screen and (max-width: $brkpoint-lg) {
+    .viewall3 {
+        display: block;
+    }
+    .view-all {
+        display: none;
+    }
+    .view-all2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $brkpoint-xxlg) {
+    .blog-box3 {
+        display: none;
+    }
 }

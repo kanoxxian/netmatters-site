@@ -17,6 +17,11 @@
     width: 50%;
 }
 
+.welcome-content-left p {
+    margin: 0;
+    line-height: 1.875rem;
+}
+
 .welcome-content-left a {
     color: $white;
     text-decoration: none;
@@ -24,13 +29,14 @@
 
 .welcome-content-left h2 {
     font-size: 36px;
+    font-weight: $font-weight--mediumbold;
 }
 
-.welcome-read-button {
+.welcome-read-button, .welcome-read-button2 {
     background:#272936;
     line-height: 35px;
-    width: 190px;
-    padding: 10px 20px;
+    width: auto;
+    padding: 10px 30px;
     border-radius: 5px;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -40,6 +46,10 @@
     &:hover {
         background-color: darken(#272936, 10%)
     }
+}
+
+.welcome-read-button2 {
+    margin-left: 15px;
 }
 
 .h2-clients {
@@ -64,19 +74,26 @@
 }
 
 .welcome-content-right p {
-    font-weight: $font-weight--bold;
     font-style: italic;
+    margin: 0;
+    line-height: 1.875rem;
+    font-size: 1.3rem;
+    font-weight: $font-weight--mediumbold;
 }
 
 .welcome-content-right span {
     font-weight: $font-weight--bold;
     color: #a3a8ac;
+    font-size: 1.1rem;
+    font-weight: $font-weight--mediumbold;
 }
 
 .welcome-content-right h2 {
     font-size: 36px;
     height: auto;
     width: auto;
+    margin-bottom: 0;
+    font-weight: $font-weight--mediumbold;
 }
 
 .welcome-left-bold {
@@ -90,7 +107,7 @@
     width: 241px;
     padding: 10px 20px;
     border-radius: 5px;
-    margin: 40px 8px 0px 0px;
+    margin: 55px 8px 0px 0px;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -106,7 +123,7 @@
     width: 270px;
     padding: 10px 10px;
     border-radius: 5px;
-    margin: 40px 0px 0px 8px;
+    margin: 55px 0px 0px 8px;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -116,8 +133,9 @@
 }
 
 .gold-star {
-    color: #ffa500;
-    font-size: 50px;
+    color: orange;
+    font-size: 45px;
+    display: inline-table;
 }
 
 @media screen and (max-width: $brkpoint-xlg) {
@@ -125,7 +143,24 @@
         width: 100%;
     }
     .welcome-content-right {
+        display: block;
         width: 100%;
+    }
+    .gold-star {
+        margin: 20px 0px;
     }
 }
 
+
+@media screen and (max-width: $brkpoint-md) {
+    .welcome-trust-button {
+        margin: 15px 0 0 0;
+    }
+    .welcome-read-button, .welcome-read-button2 {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .welcome-read-button2 {
+        margin-top: 15px;
+    }
+}

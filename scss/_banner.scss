@@ -1,5 +1,6 @@
 // banner
 
+
 .item {
     position: relative;
     height: 100%;
@@ -14,12 +15,6 @@
     top: 0;
     bottom: 0;
     background: linear-gradient(270deg,transparent 25%,#000);
-}
-
-.banner-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .banner-container {
@@ -209,3 +204,34 @@
     margin-left: 15px;
 }
 
+@media screen and (max-width: $brkpoint-xxlg) {
+    .gradient img {
+        width: 1200px;
+        height: 550px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: $brkpoint-xlg) {
+    .gradient img {
+        width: 992px;
+        height: 550px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: $brkpoint-lg) {
+    .gradient img {
+        width: 768px;
+        height: 550px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: $brkpoint-md) {
+    .gradient img {
+        width: 576px;
+        height: 550px;
+        object-fit: cover;
+    }
+}

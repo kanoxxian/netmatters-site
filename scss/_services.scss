@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-left: 90px;
     width: 100%;
     font-size: 26px;
     font-weight: 100;
@@ -13,7 +12,6 @@
 .view-all {
     font-size: 26px;
     margin: 32px 0px;
-    padding-right: 90px;
     text-decoration: none;
     color: black;
     &:hover {
@@ -28,8 +26,10 @@ section {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: row;
+    gap: 20px;
+    column-gap: 25px;
 }
 
 .service-cards {
@@ -338,7 +338,7 @@ section {
     width: 300px;
     max-width: 100%;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 16px;
     border: 1px solid $grey;
     background-color: $white;
@@ -407,7 +407,7 @@ section {
     width: 300px;
     max-width: 100%;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 16px;
     border: 1px solid $grey;
     background-color: $white;
@@ -476,7 +476,7 @@ section {
     width: 300px;
     max-width: 100%;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 16px;
     border: 1px solid $grey;
     background-color: $white;
@@ -537,6 +537,11 @@ section {
 
 
 @media screen and (max-width: $brkpoint-xxlg) {
+    section {
+        gap: 0;
+        column-gap: 0;
+        justify-content: space-between;
+    }
     .service-card-1 {
         width: 300px;
     }
@@ -573,13 +578,14 @@ section {
         max-width: 600px;
     }
     .service-card-1 {
-        width: 100%;
+        width: 97%;
     }
     .service-card-2 {
-        width: 100%;
+        width: 97%;
     }
     .service-card-3 {
-        width: 100%;
+        width: 97%;
+        padding: 40px;
     }
     .service-card-4 {
         margin: 0;
@@ -639,5 +645,16 @@ section {
         margin-top: 20px;
         width: 100%;
     }
+}
 
+@media screen and (min-width: $brkpoint-xxlg) {
+    .service-card-1 {
+        width: 415px;
+    }
+    .service-card-2 {
+        width: 403px;
+    }
+    .service-card-3 {
+        width: 406px;
+    }
 }
