@@ -224,10 +224,6 @@ Header {
   font-style: "Poppins", sans-serif;
 }
 
-:-ms-input-placeholder {
-  font-style: "Poppins", sans-serif;
-}
-
 ::placeholder {
   font-style: "Poppins", sans-serif;
 }
@@ -638,7 +634,7 @@ Header {
 .nav-bar ul li:hover .drop-menu {
   display: block;
   left: -440px;
-  width: 1920px;
+  width: 2000px;
   text-align: left;
 }
 
@@ -697,7 +693,7 @@ Header {
 .nav-bar ul li:hover .drop-menu2 {
   display: block;
   left: -782px;
-  width: 1920px;
+  width: 2000px;
   text-align: left;
 }
 
@@ -738,7 +734,7 @@ Header {
 .nav-bar ul li:hover .drop-menu3 {
   display: block;
   left: -955px;
-  width: 1920px;
+  width: 2000px;
   text-align: left;
 }
 
@@ -779,7 +775,7 @@ Header {
 .nav-bar ul li:hover .drop-menu4 {
   display: block;
   left: -1125px;
-  width: 1920px;
+  width: 2000px;
   text-align: left;
 }
 
@@ -820,7 +816,7 @@ Header {
 .nav-bar ul li:hover .drop-menu5 {
   display: block;
   left: -1300px;
-  width: 1920px;
+  width: 2000px;
   text-align: left;
 }
 
@@ -861,7 +857,7 @@ Header {
 .nav-bar ul li:hover .drop-menu6 {
   display: block;
   left: -1470px;
-  width: 1920px;
+  width: 2000px;
   text-align: left;
 }
 
@@ -888,7 +884,7 @@ Header {
 .nav-bar ul li:hover .drop-menu7 {
   display: block;
   left: -612px;
-  width: 1920px;
+  width: 2000px;
   text-align: left;
 }
 
