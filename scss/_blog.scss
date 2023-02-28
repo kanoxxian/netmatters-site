@@ -35,6 +35,13 @@ a {
     border: 1px solid #CCC;
     border-radius: 0 0 3px 3px;
     margin: 20px;
+    position: relative;
+    transition: top 0.5s;
+    top: 0;
+    &:hover {
+        top: -10px;
+        cursor: pointer;
+    }
 }
 
 .blog-box2 {
@@ -43,6 +50,13 @@ a {
     border: 1px solid #CCC;
     border-radius: 0 0 3px 3px;
     margin: 20px;
+    position: relative;
+    transition: top 0.5s;
+    top: 0;
+    &:hover {
+        top: -10px;
+        cursor: pointer;
+    }
 }
 
 .blog-box3 {
@@ -51,6 +65,13 @@ a {
     border: 1px solid #CCC;
     border-radius: 0 0 3px 3px;
     margin: 20px;
+    position: relative;
+    transition: top 0.5s;
+    top: 0;
+    &:hover {
+        top: -10px;
+        cursor: pointer;
+    }
 }
 
 
@@ -77,6 +98,9 @@ a {
     line-height: 10px;
     width: 110px;
     padding: 3px 10px;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .blog-text {
@@ -124,6 +148,7 @@ a {
 .logo-date img {
     position: relative;
     top: 10px;
+    border-radius: 50%;
 }
 
 .logo-date span {
@@ -207,5 +232,24 @@ a {
 @media screen and (max-width: $brkpoint-xxlg) {
     .blog-box3 {
         display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .blog-box {
+        width: 285px;
+    }
+    .blog-box2 {
+        width: 285px;
+    }
+    .blog-img img {
+        height: 90%;
+    }
+    .blog-img a {
+        left: 223px;
+        bottom: 190px;
+    }
+    .logo-date span {
+        margin-left: 3px;
     }
 }

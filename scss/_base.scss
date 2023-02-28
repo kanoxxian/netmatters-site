@@ -22,3 +22,12 @@ Header {
     line-height: calc(46px / 42px);
     margin-bottom: em(70px, 42px);
 }
+
+:focus-visible {
+    outline: 0;
+}
+
+// *, html {
+//     margin:0;
+//     padding:0;  
+// }

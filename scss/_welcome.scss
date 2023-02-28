@@ -164,3 +164,12 @@
         margin-top: 15px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .welcome-read-button {
+        padding: 10px 17px;
+    }
+    .gold-star {
+        font-size: 41px;
+    }
+}

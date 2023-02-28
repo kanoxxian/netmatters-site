@@ -147,17 +147,20 @@ Header {
   margin-bottom: 1.6666666667em;
 }
 
+:focus-visible {
+  outline: 0;
+}
+
 .logo {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   margin: 20px auto;
+  box-sizing: border-box;
 }
 
 .width3 img {
   max-height: 100%;
   max-width: 100%;
-  width: 370px;
-  height: 64px;
 }
 
 .logo__container {
@@ -204,6 +207,12 @@ Header {
   border: 1px solid #ddd;
   margin-left: 3px;
   float: left;
+}
+
+.search-bar-style input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
 .search-bar-style button {
@@ -932,6 +941,7 @@ small {
   position: relative;
   height: 100%;
   max-height: 550px;
+  margin-bottom: 10px;
 }
 
 .gradient::after {
@@ -1190,9 +1200,6 @@ section {
   flex-wrap: wrap;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 20px;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
 }
 
 .service-cards {
@@ -1213,6 +1220,8 @@ section {
   color: #333645;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
   transition: all 0.5s ease-in-out;
+  margin: 0 auto;
+  margin-right: 0;
 }
 
 .service-icon-1 {
@@ -1277,10 +1286,11 @@ section {
   color: #fff;
   background-color: #67809f;
   border-radius: 3px;
-  padding: 6px 12px;
   margin-top: 20px;
   display: inline-block;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 35px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1344,9 +1354,10 @@ section {
   color: #fff;
   background-color: #4183d7;
   border-radius: 3px;
-  padding: 6px 12px;
   display: inline-block;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 35px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1410,10 +1421,11 @@ section {
   color: #fff;
   background-color: #2ecc71;
   border-radius: 3px;
-  padding: 6px 12px;
   margin-top: 20px;
   display: inline-block;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 35px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1478,9 +1490,10 @@ section {
   color: #fff;
   background-color: #d64541;
   border-radius: 3px;
-  padding: 6px 12px;
   display: inline-block;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 35px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1545,9 +1558,10 @@ section {
   color: #fff;
   background-color: #f62459;
   border-radius: 3px;
-  padding: 6px 12px;
   display: inline-block;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 35px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1611,10 +1625,11 @@ section {
   text-transform: uppercase;
   color: #fff;
   background-color: #926fb1;
-  padding: 6px 12px;
   border-radius: 3px;
   display: inline-block;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 35px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1678,31 +1693,31 @@ section {
   text-transform: uppercase;
   color: #fff;
   background-color: #f62459;
-  padding: 6px 12px;
   border-radius: 3px;
   display: inline-block;
-  font-size: 14px;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 35px;
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1275px) {
   section {
-    gap: 0;
-    -moz-column-gap: 0;
-         column-gap: 0;
-    justify-content: space-between;
+    justify-content: center;
   }
   .service-card-1 {
     width: 300px;
   }
   .service-card-2 {
     width: 300px;
+    margin-left: 30px;
   }
   .service-card-2 a {
     margin-top: 20px;
   }
   .service-card-3 {
     width: 300px;
+    margin-left: 30px;
   }
   .service-card-4 {
     width: 460px;
@@ -1725,16 +1740,22 @@ section {
 @media screen and (max-width: 992px) {
   section {
     max-width: 600px;
+    gap: 20px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
   }
   .service-card-1 {
     width: 97%;
+    margin: 0;
   }
   .service-card-2 {
     width: 97%;
+    margin: 0;
   }
   .service-card-3 {
     width: 97%;
     padding: 40px;
+    margin: 0;
   }
   .service-card-4 {
     margin: 0;
@@ -1794,7 +1815,7 @@ section {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1275px) {
   .service-card-1 {
     width: 415px;
   }
@@ -1803,6 +1824,35 @@ section {
   }
   .service-card-3 {
     width: 406px;
+  }
+}
+@media screen and (min-width: 1276px) {
+  section {
+    gap: 20px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    justify-content: center;
+  }
+  .service-card-1 {
+    width: 400px;
+  }
+  .service-card-2 {
+    width: 400px;
+  }
+  .service-card-3 {
+    width: 400px;
+  }
+  .service-card-4 {
+    width: 300px;
+  }
+  .service-card-5 {
+    width: 300px;
+  }
+  .service-card-6 {
+    width: 300px;
+  }
+  .service-card-7 {
+    width: 300px;
   }
 }
 .awards {
@@ -1981,6 +2031,14 @@ section {
     margin-top: 15px;
   }
 }
+@media screen and (max-width: 320px) {
+  .welcome-read-button {
+    padding: 10px 17px;
+  }
+  .gold-star {
+    font-size: 41px;
+  }
+}
 a {
   text-decoration: none;
   color: #070707;
@@ -2014,6 +2072,13 @@ a {
   border: 1px solid #CCC;
   border-radius: 0 0 3px 3px;
   margin: 20px;
+  position: relative;
+  transition: top 0.5s;
+  top: 0;
+}
+.blog-box:hover {
+  top: -10px;
+  cursor: pointer;
 }
 
 .blog-box2 {
@@ -2022,6 +2087,13 @@ a {
   border: 1px solid #CCC;
   border-radius: 0 0 3px 3px;
   margin: 20px;
+  position: relative;
+  transition: top 0.5s;
+  top: 0;
+}
+.blog-box2:hover {
+  top: -10px;
+  cursor: pointer;
 }
 
 .blog-box3 {
@@ -2030,6 +2102,13 @@ a {
   border: 1px solid #CCC;
   border-radius: 0 0 3px 3px;
   margin: 20px;
+  position: relative;
+  transition: top 0.5s;
+  top: 0;
+}
+.blog-box3:hover {
+  top: -10px;
+  cursor: pointer;
 }
 
 .blog-img {
@@ -2055,6 +2134,9 @@ a {
   line-height: 10px;
   width: 110px;
   padding: 3px 10px;
+}
+.blog-img a:hover {
+  text-decoration: underline;
 }
 
 .blog-text {
@@ -2102,6 +2184,7 @@ a {
 .logo-date img {
   position: relative;
   top: 10px;
+  border-radius: 50%;
 }
 
 .logo-date span {
@@ -2184,6 +2267,24 @@ a {
 @media screen and (max-width: 1200px) {
   .blog-box3 {
     display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .blog-box {
+    width: 285px;
+  }
+  .blog-box2 {
+    width: 285px;
+  }
+  .blog-img img {
+    height: 90%;
+  }
+  .blog-img a {
+    left: 223px;
+    bottom: 190px;
+  }
+  .logo-date span {
+    margin-left: 3px;
   }
 }
 .clients {
@@ -2491,6 +2592,7 @@ footer {
 }
 
 .services {
+  width: 170px;
   font-size: 13px;
   text-align: left;
   align-content: left;
@@ -2554,7 +2656,31 @@ footer {
 }
 
 .social-padding {
-  padding: 7px 10px;
+  padding: 10px 10px;
+}
+
+.fa-facebook:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #3B5998;
+}
+
+.fa-twitter:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #00ACED;
+}
+
+.fa-instagram:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #D93175;
+}
+
+.fa-linkedin-in:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #0077B5;
 }
 
 @media screen and (max-width: 576px) {
@@ -2575,6 +2701,7 @@ footer {
     width: 70vw;
     justify-content: space-evenly;
     align-items: flex-start;
+    gap: 30px;
   }
   .offices {
     display: flex;
@@ -2669,6 +2796,18 @@ footer {
   }
   .newsletter-h2 {
     margin-left: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .newsletter-h2 {
+    margin-left: 15px;
+    font-size: 32px;
+  }
+  .checkbox-container label::before {
+    width: 132px;
+  }
+  .width {
+    margin: 0 10px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -2797,9 +2936,6 @@ footer {
   .banner-button {
     width: 232px;
   }
-  .bespoke-banner-h1 {
-    left: 260px !important;
-  }
   .support-banner-h1 {
     left: 330px !important;
   }
@@ -2817,6 +2953,130 @@ footer {
   }
   .cyber-banner-h1 {
     left: 300px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+    left: 265px !important;
+    top: 340px !important;
+  }
+  #banner-netmatters {
+    top: 105px !important;
+    left: 90px !important;
+  }
+  #banner-netmatters-p {
+    top: 220px !important;
+    left: 115px !important;
+  }
+  .bespoke-banner-h1 {
+    left: 185px !important;
+    top: 140px !important;
+  }
+  .bespoke-banner-p {
+    left: 170px !important;
+    top: 210px !important;
+  }
+  .support-banner-h1 {
+    left: 270px !important;
+    top: 140px !important;
+  }
+  .support-banner-p {
+    left: 195px !important;
+    top: 210px !important;
+  }
+  .marketing-banner-h1 {
+    left: 200px !important;
+    top: 140px !important;
+  }
+  .marketing-banner-p {
+    left: 180px !important;
+    top: 210px !important;
+  }
+  .telecoms-banner-h1 {
+    left: 190px !important;
+    top: 140px !important;
+  }
+  .telecoms-banner-p {
+    left: 190px !important;
+    top: 210px !important;
+  }
+  .design-banner-h1 {
+    left: 255px !important;
+    top: 140px !important;
+  }
+  .design-banner-p {
+    left: 175px !important;
+    top: 210px !important;
+  }
+  .cyber-banner-h1 {
+    left: 225px !important;
+    top: 140px !important;
+  }
+  .cyber-banner-p {
+    left: 160px !important;
+    top: 210px !important;
+  }
+}
+@media screen and (max-width: 630px) {
+  .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+    left: 200px !important;
+    top: 340px !important;
+  }
+  #banner-netmatters {
+    top: 105px !important;
+    left: 8px !important;
+  }
+  #banner-netmatters-p {
+    top: 220px !important;
+    left: 40px !important;
+  }
+  .bespoke-banner-h1 {
+    left: 110px !important;
+    top: 140px !important;
+  }
+  .bespoke-banner-p {
+    left: 110px !important;
+    top: 210px !important;
+  }
+  .support-banner-h1 {
+    left: 215px !important;
+    top: 140px !important;
+  }
+  .support-banner-p {
+    left: 140px !important;
+    top: 210px !important;
+  }
+  .marketing-banner-h1 {
+    left: 130px !important;
+    top: 140px !important;
+  }
+  .marketing-banner-p {
+    left: 105px !important;
+    top: 210px !important;
+  }
+  .telecoms-banner-h1 {
+    left: 125px !important;
+    top: 140px !important;
+  }
+  .telecoms-banner-p {
+    left: 125px !important;
+    top: 210px !important;
+  }
+  .design-banner-h1 {
+    left: 200px !important;
+    top: 140px !important;
+  }
+  .design-banner-p {
+    left: 105px !important;
+    top: 210px !important;
+  }
+  .cyber-banner-h1 {
+    left: 170px !important;
+    top: 140px !important;
+  }
+  .cyber-banner-p {
+    left: 100px !important;
+    top: 210px !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -2878,6 +3138,148 @@ footer {
   .cyber-banner-p {
     left: 80px !important;
     top: 210px !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+    left: 110px !important;
+    top: 375px !important;
+  }
+  #banner-netmatters {
+    top: 0px !important;
+    left: 8px !important;
+    width: 400px;
+  }
+  #banner-netmatters-p {
+    top: 220px !important;
+    left: 20px !important;
+    width: 400px;
+  }
+  .bespoke-banner-h1 {
+    left: 35px !important;
+    top: 140px !important;
+  }
+  .bespoke-banner-p {
+    left: 15px !important;
+    top: 210px !important;
+  }
+  .support-banner-h1 {
+    left: 125px !important;
+    top: 140px !important;
+  }
+  .support-banner-p {
+    left: 45px !important;
+    top: 210px !important;
+  }
+  .marketing-banner-h1 {
+    left: 40px !important;
+    top: 140px !important;
+  }
+  .marketing-banner-p {
+    left: 15px !important;
+    top: 210px !important;
+  }
+  .telecoms-banner-h1 {
+    left: 20px !important;
+    top: 140px !important;
+  }
+  .telecoms-banner-p {
+    left: 25px !important;
+    top: 210px !important;
+  }
+  .design-banner-h1 {
+    left: 105px !important;
+    top: 140px !important;
+  }
+  .design-banner-p {
+    left: 25px !important;
+    top: 210px !important;
+    width: 400px;
+  }
+  .cyber-banner-h1 {
+    left: 80px !important;
+    top: 140px !important;
+  }
+  .cyber-banner-p {
+    left: 30px !important;
+    top: 210px !important;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+    left: 50px !important;
+    top: 405px !important;
+  }
+  #banner-netmatters {
+    top: -10px !important;
+    left: 8px !important;
+    width: 300px;
+  }
+  #banner-netmatters-p {
+    top: 240px !important;
+    left: 15px !important;
+    width: 300px;
+  }
+  .bespoke-banner-h1 {
+    left: 15px !important;
+    top: 90px !important;
+    width: 300px;
+  }
+  .bespoke-banner-p {
+    left: 15px !important;
+    top: 210px !important;
+    width: 300px;
+  }
+  .support-banner-h1 {
+    left: 25px !important;
+    top: 140px !important;
+    width: 300px;
+  }
+  .support-banner-p {
+    left: 15px !important;
+    top: 210px !important;
+    width: 300px;
+  }
+  .marketing-banner-h1 {
+    left: 10px !important;
+    top: 95px !important;
+    width: 300px;
+  }
+  .marketing-banner-p {
+    left: 15px !important;
+    top: 210px !important;
+    width: 300px;
+  }
+  .telecoms-banner-h1 {
+    left: 20px !important;
+    top: 90px !important;
+    width: 300px;
+  }
+  .telecoms-banner-p {
+    left: 25px !important;
+    top: 210px !important;
+    width: 300px;
+  }
+  .design-banner-h1 {
+    left: 10px !important;
+    top: 140px !important;
+    width: 300px;
+  }
+  .design-banner-p {
+    left: 10px !important;
+    top: 210px !important;
+    width: 300px;
+  }
+  .cyber-banner-h1 {
+    left: 15px !important;
+    top: 105px !important;
+    width: 300px;
+  }
+  .cyber-banner-p {
+    left: 15px !important;
+    top: 210px !important;
+    width: 300px;
   }
 }
 .pop-out-nav {

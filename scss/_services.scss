@@ -28,8 +28,8 @@ section {
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 20px;
-    column-gap: 25px;
+    // gap: 20px;
+    // column-gap: 25px;
 }
 
 .service-cards {
@@ -50,6 +50,8 @@ section {
     color: $cloud-burst;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     transition: all 0.5s ease-in-out;
+    margin: 0 auto;
+    margin-right: 0;
 }
 
 
@@ -115,10 +117,11 @@ section {
     color: $white;
     background-color: $dark-blue;
     border-radius: 3px;
-    padding: 6px 12px;
     margin-top: 20px;
     display: inline-block;
-    font-size: 14px;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 35px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -184,9 +187,10 @@ section {
     color: $white;
     background-color: $blue-ribbon;
     border-radius: 3px;
-    padding: 6px 12px;
     display: inline-block;
-    font-size: 14px;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 35px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -252,10 +256,11 @@ section {
     color: $white;
     background-color: $emerald;
     border-radius: 3px;
-    padding: 6px 12px;
     margin-top: 20px;
     display: inline-block;
-    font-size: 14px;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 35px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -322,9 +327,10 @@ section {
     color: $white;
     background-color: $thunderbird;
     border-radius: 3px;
-    padding: 6px 12px;
     display: inline-block;
-    font-size: 14px;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 35px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -391,9 +397,10 @@ section {
     color: $white;
     background-color: $tuscany;
     border-radius: 3px;
-    padding: 6px 12px;
     display: inline-block;
-    font-size: 14px;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 35px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -459,10 +466,11 @@ section {
     text-transform: uppercase;
     color: $white;
     background-color: $lavender;
-    padding: 6px 12px;
     border-radius: 3px;
     display: inline-block;
-    font-size: 14px;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 35px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -528,31 +536,33 @@ section {
     text-transform: uppercase;
     color: $white;
     background-color: $disco;
-    padding: 6px 12px;
     border-radius: 3px;
     display: inline-block;
-    font-size: 14px;
+    padding: 5px 15px;
+    font-size: 16px;
+    line-height: 35px;
     transition: all 0.5s ease-in-out;
 }
 
 
-@media screen and (max-width: $brkpoint-xxlg) {
+
+@media screen and (max-width: 1275px) {
     section {
-        gap: 0;
-        column-gap: 0;
-        justify-content: space-between;
+        justify-content: center;
     }
     .service-card-1 {
         width: 300px;
     }
     .service-card-2 {
         width: 300px;
+        margin-left: 30px;
     }
     .service-card-2 a {
         margin-top: 20px;
     }
     .service-card-3 {
         width: 300px;
+        margin-left: 30px;
     }
     .service-card-4 {
         width: 460px;
@@ -573,19 +583,25 @@ section {
     }
 }
 
+
 @media screen and (max-width: $brkpoint-xlg) {
     section {
         max-width: 600px;
+        gap: 20px;
+        column-gap: 25px;
     }
     .service-card-1 {
         width: 97%;
+        margin: 0;
     }
     .service-card-2 {
         width: 97%;
+        margin: 0;
     }
     .service-card-3 {
         width: 97%;
         padding: 40px;
+        margin: 0;
     }
     .service-card-4 {
         margin: 0;
@@ -647,7 +663,7 @@ section {
     }
 }
 
-@media screen and (min-width: $brkpoint-xxlg) {
+@media screen and (min-width: 1275px) {
     .service-card-1 {
         width: 415px;
     }
@@ -656,5 +672,67 @@ section {
     }
     .service-card-3 {
         width: 406px;
+    }
+}
+
+// @media screen and (max-width: 1275px) {
+//     section {
+//         justify-content: center;
+//     }
+//     .service-card-1 {
+//         width: 325px;
+//     }
+//     .service-card-2 {
+//         width: 325px;
+//     }
+//     .service-card-2 a {
+//         margin-top: 15px;
+//     }
+//     .service-card-3 {
+//         width: 325px;
+//     }
+//     .service-card-3 a {
+//         margin-top: 37px;
+//     }
+//     .service-card-4 {
+//         width: 500px;
+//     }
+//     .service-card-5 {
+//         width: 500px;
+//     }
+//     .service-card-6 {
+//         width: 500px;
+//     }
+//     .service-card-7 {
+//         width: 500px;
+//     }
+// }
+
+@media screen and (min-width: 1276px) {
+    section {
+        gap: 20px;
+        column-gap: 25px;
+        justify-content: center;
+    }
+    .service-card-1 {
+        width: 400px;
+    }
+    .service-card-2 {
+        width: 400px;
+    }
+    .service-card-3 {
+        width: 400px;
+    }
+    .service-card-4 {
+        width: 300px;
+    }
+    .service-card-5 {
+        width: 300px;
+    }
+    .service-card-6 {
+        width: 300px;
+    }
+    .service-card-7 {
+        width: 300px;
     }
 }

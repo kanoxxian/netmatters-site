@@ -3451,7 +3451,7 @@
 
 $('#one').owlCarousel({
     loop:true,
-	autoplay:true,
+	autoplay:false,
     margin:0,
     responsive:{
         0:{
@@ -3482,4 +3482,3 @@ $(document).ready(function(){
 var dots = $('.owl-dots').css('position', 'absolute').css('bottom', '40px');
 dots.css('left', 'calc(50% - ' + dots.width()/2+'px)');
 
-  
