@@ -52,6 +52,8 @@ section {
     transition: all 0.5s ease-in-out;
     margin: 0 auto;
     margin-right: 0;
+    transition: top 0.5s;
+    top: 0;
 }
 
 
@@ -70,9 +72,12 @@ section {
     transition: all 0.5s ease-in-out;
 }
 
+
 .service-card-1:hover {
     background-color: $dark-blue;
     color: $white;
+    top: -10px;
+    cursor: pointer;
 }
 
 .service-card-1:hover > .service-icon-1 {
@@ -141,6 +146,8 @@ section {
     color: $blue-ribbon;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     transition: all 0.5s ease-in-out;
+    transition: top 0.5s;
+    top: 0;
 }
 
 .service-icon-2 {
@@ -161,6 +168,8 @@ section {
 .service-card-2:hover {
     background-color: $blue-ribbon;
     color: $white;
+    top: -10px;
+    cursor: pointer;
 }
 
 .service-card-2:hover > .service-icon-2 {
@@ -210,6 +219,8 @@ section {
     color: $blue-ribbon;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     transition: all 0.5s ease-in-out;
+    transition: top 0.5s;
+    top: 0;
 }
 
 .service-icon-3 {
@@ -230,6 +241,8 @@ section {
 .service-card-3:hover {
     background-color: $emerald;
     color: $white;
+    top: -10px;
+    cursor: pointer;
 }
 
 .service-card-3:hover > .service-icon-3 {
@@ -281,6 +294,8 @@ section {
     color: $thunderbird;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     transition: all 0.5s ease-in-out;
+    transition: top 0.5s;
+    top: 0;
 }
 
 .service-icon-4 {
@@ -301,6 +316,8 @@ section {
 .service-card-4:hover {
     background-color: $thunderbird;
     color: $white;
+    top: -10px;
+    cursor: pointer;
 }
 
 .service-card-4:hover > .service-icon-4 {
@@ -351,6 +368,8 @@ section {
     color: $tuscany;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     transition: all 0.5s ease-in-out;
+    transition: top 0.5s;
+    top: 0;
 }
 
 .service-icon-5 {
@@ -371,6 +390,8 @@ section {
 .service-card-5:hover {
     background-color: $tuscany;
     color: $white;
+    top: -10px;
+    cursor: pointer;
 }
 
 .service-card-5:hover > .service-icon-5 {
@@ -421,6 +442,8 @@ section {
     color: $lavender;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     transition: all 0.5s ease-in-out;
+    transition: top 0.5s;
+    top: 0;
 }
 
 .service-icon-6 {
@@ -441,6 +464,8 @@ section {
 .service-card-6:hover {
     background-color: $lavender;
     color: $white;
+    top: -10px;
+    cursor: pointer;
 }
 
 .service-card-6:hover > .service-icon-6 {
@@ -491,6 +516,8 @@ section {
     color: $disco;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
     transition: all 0.5s ease-in-out;
+    transition: top 0.5s;
+    top: 0;
 }
 
 .service-icon-7 {
@@ -511,6 +538,8 @@ section {
 .service-card-7:hover {
     background-color: $disco;
     color: $white;
+    top: -10px;
+    cursor: pointer;
 }
 
 .service-card-7:hover > .service-icon-7 {

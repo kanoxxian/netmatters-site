@@ -30,6 +30,10 @@
     color: $white;
     text-decoration: none;
     text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+        background: darken($blue-ribbon, 10%)
+    }
 }
 
 
@@ -44,6 +48,10 @@
     color: $white;
     text-decoration: none;
     text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+        background: darken(#999aa2, 10%)
+    }
 }
 
 .search-bar-style {
@@ -73,6 +81,10 @@
     background-color: #999aa2;
     color: $white;
     margin: 0;
+    &:hover {
+        cursor: pointer;
+        background: darken(#999aa2, 10%)
+    }
 }
 
 .search-bar-style button i {
@@ -96,6 +108,9 @@
     outline: none;
     border: none;
     z-index: 4;
+    &:hover {
+        background: darken($cloud-burst, 10%)
+    }
 }
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
@@ -130,11 +145,11 @@
 }
 
 #consent-popup {
-    position: absolute;
+    position: relative;
     display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     background-color: $white;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -142,6 +157,22 @@
     width: 600px;
     padding: 15px 20px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+}
+
+@media screen and (max-width: $brkpoint-lg) {
+    #consent-popup {
+        width: 100% !important;
+        top: 20%;
+    }
+    .modal-buttons {
+        flex-direction: column;
+    }
+    .cookie-change {
+        width: 100% !important;
+    }
+    .accept-cookies {
+        width: 100% !important;
+    }
 }
 
 .modal-buttons {
