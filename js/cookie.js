@@ -53,8 +53,34 @@ document.querySelector("#darken").addEventListener("click", () => {
     toggleNav();
 });
 
+function toggleSearchOn() {
+    if ((window.outerWidth >= 992) && (window.outerWidth < 1260)) {
+        document.querySelector(".search-show").setAttribute(
+            "style", "display: inline; margin: 0;");
+        document.querySelector(".search-bar").setAttribute(
+            "style", "margin-left: auto; margin-right: 20px;");
+        document.querySelector(".search-glass2").style.margin = "0";
+        document.querySelector(".logo__container--support").style.display = "none";
+        document.querySelector(".logo__container--contact").style.display = "none";
+        isOpen = false;
+    }
+}
 
+function toggleSearchOff() {
+    if ((window.outerWidth >= 992) && (window.outerWidth < 1260)) {
+        document.querySelector(".search-show").removeAttribute(
+            "style", "display: inline; margin: 0;");
+        document.querySelector(".search-bar").removeAttribute(
+            "style", "margin-left: auto; margin-right: 20px;");
+        document.querySelector(".search-glass2").style.margin = null;
+        document.querySelector(".logo__container--support").style.display = null;
+        document.querySelector(".logo__container--contact").style.display = null;
+        isOpen = true;
+    }
+}
 
+var isOpen = true;
 
-
-
+function toggleSearch() {
+   isOpen ? toggleSearchOn() : toggleSearchOff();
+};
