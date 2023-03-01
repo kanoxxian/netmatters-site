@@ -2065,6 +2065,19 @@ section {
   display: inline-table;
 }
 
+@media screen and (max-width: 1200px) {
+  .welcome-trust-button {
+    margin: 0;
+  }
+  .welcome-read-button2 {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .welcome-read-button {
+    margin-bottom: 0;
+  }
+}
 @media screen and (max-width: 992px) {
   .welcome-content-left {
     width: 100%;
@@ -2083,7 +2096,7 @@ section {
   }
   .welcome-read-button, .welcome-read-button2 {
     margin-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 3px;
   }
   .welcome-read-button2 {
     margin-top: 15px;
