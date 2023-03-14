@@ -241,6 +241,8 @@
 
 // BANNER QUERIES
 
+
+
 @media screen and (max-width: $brkpoint-xxlg) {
     .banner-container h1 {
         left: 90px;
@@ -248,8 +250,11 @@
     .banner-container p {
         left: 90px;
     }
-    .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+    .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
         left: 90px;
+    }
+    .banner-button {
+        left: 90px !important;
     }
 }
 
@@ -279,6 +284,7 @@
         left: 160px;
     }
     .banner-button {
+        left: 340px !important;
         width: 232px;
     }
 
@@ -428,7 +434,24 @@
     }
 }
 
+@media screen and (max-width: 680px) {
+    #banner-netmatters {
+        top: 110px !important;
+        left: 35px !important;
+    }
+    #banner-netmatters-p {
+        top: 220px !important;
+        left: 35px !important;
+    }
+    .banner-button {
+        left: 220px !important;
+    }
+}
+
 @media screen and (max-width: $brkpoint-md) {
+    .banner-button {
+        top: 370px !important;
+    }
     .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
         left: 170px !important
     }
@@ -487,6 +510,90 @@
     .cyber-banner-p {
         left: 80px !important;
         top: 210px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 520px) {
+    #banner-netmatters {
+        top: 0px !important;
+        left: 60px !important;
+        width: 400px;
+    }
+    #banner-netmatters-p {
+        top: 220px !important;
+        left: 60px !important;
+        width: 400px;
+    }
+    .banner-button {
+        left: 140px !important;
+    }
+    .bespoke-banner-h1 {
+        left: 70px !important;
+        top: 140px !important;
+    }
+    .bespoke-banner-p {
+        left: 60px !important;
+        top: 210px !important;
+    }
+    .support-banner-h1 {
+        left: 175px !important;
+        top: 140px !important;
+    }
+    .support-banner-p {
+        left: 80px !important;
+        top: 210px !important;
+    }
+    .marketing-banner-h1 {
+        left: 85px !important;
+        top: 140px !important;
+    }
+    .marketing-banner-p {
+        left: 55px !important;
+        top: 210px !important;
+    }
+    .telecoms-banner-h1 {
+        left: 85px !important;
+        top: 140px !important;
+    }
+    .telecoms-banner-p {
+        left: 80px !important;
+        top: 210px !important;
+    }
+    .design-banner-h1 {
+        left: 150px !important;
+        top: 140px !important;
+    }
+    .design-banner-p {
+        left: 75px !important;
+        top: 210px !important;
+        width: 400px;
+    }
+    .cyber-banner-h1 {
+        left: 125px !important;
+        top: 140px !important;
+    }
+    .cyber-banner-p {
+        left: 85px !important;
+        top: 210px !important;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #banner-netmatters {
+        top: 0px !important;
+        left: 25px !important;
+        width: 400px;
+    }
+    #banner-netmatters-p {
+        top: 220px !important;
+        left: 25px !important;
+        width: 400px;
+    }
+    .banner-button {
+        left: 110px !important;
     }
 }
 
@@ -554,6 +661,83 @@
         left: 30px !important;
         top: 210px !important;
         width: 400px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .banner-button, .banner-button2, .banner-button3, .banner-button4, .banner-button5, .banner-button6, .banner-button7 {
+        left: 70px !important;
+        top: 405px !important;
+    }
+    #banner-netmatters {
+        top: -10px !important;
+        left: 35px !important;
+        width: 300px;
+    }
+    #banner-netmatters-p {
+        top: 240px !important;
+        left: 35px !important;
+        width: 300px;
+    }
+    .bespoke-banner-h1 {
+        left: 35px !important;
+        top: 90px !important;
+        width: 300px;
+    }
+    .bespoke-banner-p {
+        left: 35px !important;
+        top: 210px !important;
+        width: 300px;
+    }
+    .support-banner-h1 {
+        left: 35px !important;
+        top: 140px !important;
+        width: 300px;
+    }
+    .support-banner-p {
+        left: 35px !important;
+        top: 210px !important;
+        width: 300px;
+    }
+    .marketing-banner-h1 {
+        left: 30px !important;
+        top: 95px !important;
+        width: 300px;
+    }
+    .marketing-banner-p {
+        left: 35px !important;
+        top: 210px !important;
+        width: 300px;
+    }
+    .telecoms-banner-h1 {
+        left: 50px !important;
+        top: 90px !important;
+        width: 300px;
+    }
+    .telecoms-banner-p {
+        left: 55px !important;
+        top: 210px !important;
+        width: 300px;
+    }
+    .design-banner-h1 {
+        left: 30px !important;
+        top: 140px !important;
+        width: 300px;
+    }
+    .design-banner-p {
+        left: 30px !important;
+        top: 210px !important;
+        width: 300px;
+    }
+    .cyber-banner-h1 {
+        left: 35px !important;
+        top: 105px !important;
+        width: 300px;
+    }
+    .cyber-banner-p {
+        left: 35px !important;
+        top: 210px !important;
+        width: 300px;
     }
 }
 
@@ -631,6 +815,60 @@
         left: 15px !important;
         top: 210px !important;
         width: 300px;
+    }
+}
+
+@media screen and (min-width: 1451px) {
+    .netmatters-banner-h1, .bespoke-banner-h1, .design-banner-h1, .cyber-banner-h1, .marketing-banner-h1, .support-banner-h1, .telecoms-banner-h1 {
+        left: 360px;
+    }
+    .netmatters-banner-p, .bespoke-banner-p, .design-banner-p, .cyber-banner-p, .marketing-banner-p, .support-banner-p, .telecoms-banner-p {
+        left: 365px;
+    }
+    .banner-button {
+        left: 360px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .netmatters-banner-h1 {
+        left: 270px;
+    }
+    .bespoke-banner-h1, .design-banner-h1, .cyber-banner-h1, .marketing-banner-h1, .support-banner-h1, .telecoms-banner-h1 {
+        left: 360px;
+    }
+    .bespoke-banner-p, .design-banner-p, .cyber-banner-p, .marketing-banner-p, .support-banner-p, .telecoms-banner-p {
+        left: 360px;
+    }
+    .netmatters-banner-p {
+        left: 275px;
+    }
+    .banner-button {
+        left: 270px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .netmatters-banner-h1 {
+        left: 220px;
+    }
+    .netmatters-banner-p {
+        left: 225px;
+    }
+    .banner-button {
+        left: 220px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .netmatters-banner-h1 {
+        left: 160px;
+    }
+    .netmatters-banner-p {
+        left: 165px;
+    }
+    .banner-button {
+        left: 160px;
     }
 }
 

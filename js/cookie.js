@@ -11,25 +11,31 @@ const cookieStorage = {
     },
 }
 
-const storageType = cookieStorage;
+const storageType = localStorage;
 const consentPropertyName = 'nm-consent';
 
-const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+const shouldShowPopup = () => {
+  const consent = storageType.getItem(consentPropertyName);
+  return consent !== 'true';
+};
+
+const saveToStorage = () => {
+  storageType.setItem(consentPropertyName, 'true');
+};
 
 window.onload = () => {
+  const acceptFn = (event) => {
+    saveToStorage(storageType);
+    consentPopup.classList.add('hidden');
+  };
 
-    const acceptFn = event => {
-        saveToStorage(storageType);
-        consentPopup.classList.add('hidden');
-    }
-    const consentPopup = document.getElementById('cookie-modal');
-    const acceptBtn = document.getElementById('accept');
-    acceptBtn.addEventListener('click', acceptFn);
+  const consentPopup = document.getElementById('cookie-modal');
+  const acceptBtn = document.getElementById('accept');
+  acceptBtn.addEventListener('click', acceptFn);
 
-    if (shouldShowPopup(storageType)) {
-            consentPopup.classList.remove('hidden');
-        };
+  if (shouldShowPopup(storageType)) {
+    consentPopup.classList.remove('hidden');
+  }
 };
 
 
