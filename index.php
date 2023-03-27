@@ -487,12 +487,12 @@
     </h3>
     </div>
     </div>
-
+    <?php include("./inc/news.php"); ?>
     <div id="blog">
       <div class="blog-heading">
       </div>
 
-      <div class="blog-container">
+      <!-- <div class="blog-container">
         <div class="blog-box">
           <div class="blog-img">
             <img src="./img/green-team.png" alt="">
@@ -539,13 +539,13 @@
 
     <div class="blog-box3">
       <div class="blog-img">
-        <img src="./img/business-dev.png" alt="">
+        <img src="./img/2nd-line-support.jpg" alt="">
         <a href="#">News</a>
       </div>
       <div class="blog-shadow">
       <div class="blog-text">
-        <h3 class="blog-title">The Green Team Reducing Our Carbon Footprint...</h3>
-        <p>At Netmatters, we are continuing to support carbon reduction and reforestation projects through our Ecologi programme.</p>
+        <h3 class="blog-title">Hiring A 2nd Line Support Technician</h3>
+        <p>Salary Range £28k-£36k + Bonuses + Pension Hours 40 hours per week, Monday - Friday Location Wymondh...</p>
         <div class="readmore-btn">            
           <a href="#">Read More</a>
         </div>
@@ -558,7 +558,7 @@
     </div>
   </div>
 </div>
-</div>
+</div> -->
 
 <div class="viewall3"><a href="#">View All</a> &#8594;</div>
 

@@ -90,3 +90,77 @@ var isOpen = true;
 function toggleSearch() {
    isOpen ? toggleSearchOn() : toggleSearchOff();
 };
+
+
+function validateForm() {
+    const name = document.getElementById('name');
+    const company = document.getElementById('company');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    const subject = document.getElementById('subject');
+    const message = document.getElementById('message');
+    const phoneRegex = /^[0-9]+$/;
+  
+    let isValid = true;
+  
+    if (name.value.trim() === '') {
+      name.style.border = '1px solid red';
+      isValid = false;
+    } else {
+      name.style.border = '';
+    }
+  
+    if (company.value.trim() === '') {
+      company.style.border = '1px solid red';
+      isValid = false;
+    } else {
+      company.style.border = '';
+    }
+  
+    if (email.value.trim() === '') {
+      email.style.border = '1px solid red';
+      isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+      email.style.border = '1px solid red';
+      isValid = false;
+    } else {
+      email.style.border = '';
+    }
+  
+    if (phone.value.trim() === '') {
+      phone.style.border = '1px solid red';
+      isValid = false;
+    } else if (!phoneRegex.test(phone.value)) {
+      phone.style.border = '1px solid red';
+      isValid = false;
+    } else {
+      phone.style.border = '';
+    }
+  
+    if (subject.value.trim() === '') {
+      subject.style.border = '1px solid red';
+      isValid = false;
+    } else {
+      subject.style.border = '';
+    }
+  
+    if (message.value.trim() === '') {
+      message.style.border = '1px solid red';
+      isValid = false;
+    } else {
+      message.style.border = '';
+    }
+  
+    return isValid;
+  }
+  
+  const sendEnquiryButton = document.querySelector('.send-enq');
+  
+  sendEnquiryButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    if (validateForm()) {
+      event.currentTarget.removeEventListener(event.type, arguments.callee);
+      event.currentTarget.click();
+    }
+  });
+  
