@@ -96,9 +96,8 @@
                 </button>
             </div>
             <div class="logo__container--contact">
-                <button class="contact">
-                <i class="fa-regular fa-paper-plane"></i> Contact
-                </button>
+                <a href="contact_page.php"><button class="contact">
+                <i class="fa-regular fa-paper-plane"></i> Contact</button></a>
             </div>
             <div class="phone-hidden"><i class="fa-solid fa-phone"></i></div>
             <div class="search-bar">
